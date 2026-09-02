@@ -69,7 +69,20 @@ public final class ParakeetEngine: TranscriptionEngine, CapabilityReporting {
         
         do {
             let version: AsrModelVersion = name.contains("v3") ? .v3 : .v2
-            let models = try await AsrModels.downloadAndLoad(version: version)
+            // ModelManager downloads into <downloadBase>/FluidInference/parakeet-coreml/<repo>.
+            // Without passing that directory here FluidAudio falls back to its own
+            // ~/Library/Application Support/FluidAudio/Models cache and downloads a
+            // second copy of the model.
+            let repo: Repo = version == .v3 ? .parakeetV3 : .parakeetV2
+            let targetDirectory = downloadBase?
+                .appendingPathComponent("FluidInference", isDirectory: true)
+                .appendingPathComponent("parakeet-coreml", isDirectory: true)
+                .appendingPathComponent(repo.folderName, isDirectory: true)
+            let models = try await AsrModels.downloadAndLoad(
+                to: targetDirectory,
+                version: version,
+                encoderPrecision: Self.encoderPrecision
+            )
 
             // FluidAudio 0.15+: AsrManager takes models at init (or via loadModels),
             // replacing the retired `initialize(models:)` entry point.
@@ -112,7 +125,11 @@ public final class ParakeetEngine: TranscriptionEngine, CapabilityReporting {
             // FluidAudio 0.15+: batch transcribe requires an explicit TDT decoder state.
             let decoderLayers = await asrManager.decoderLayerCount
             var decoderState = try TdtDecoderState(decoderLayers: decoderLayers)
-            let result = try await asrManager.transcribe(samples, decoderState: &decoderState)
+            let result = try await asrManager.transcribe(
+                samples,
+                decoderState: &decoderState,
+                language: Self.fluidAudioLanguage(for: options.language)
+            )
 
             state = .ready
             return result.text
@@ -138,5 +155,33 @@ public final class ParakeetEngine: TranscriptionEngine, CapabilityReporting {
     
     public func loadModel(modelPath: String) async throws {
         try await loadModel(path: modelPath)
+    }
+
+    /// Encoder weight format for Parakeet v3. `.int8` is the default 425 MB
+    /// encoder; `.int4` trades a little accuracy for a 285 MB download and a
+    /// smaller ANE footprint. Ignored by v2, which ships a single encoder.
+    static let encoderPrecision: ParakeetEncoderPrecision = .int8
+
+    /// Maps the app's transcription language onto FluidAudio's script-aware
+    /// token filter. Parakeet v3's multilingual joint can emit Cyrillic tokens
+    /// in the middle of Latin-script output (FluidAudio issue #512); passing the
+    /// language constrains top-K candidates to the right script. Returns nil for
+    /// "Automatic" and for languages the filter does not model — the decoder
+    /// then behaves exactly as before. Silently ignored by v2.
+    static func fluidAudioLanguage(for language: AppLanguage) -> Language? {
+        switch language {
+        case .english: return .english
+        case .german: return .german
+        case .spanish: return .spanish
+        case .french: return .french
+        case .italian: return .italian
+        case .dutch: return .dutch
+        case .portugueseBrazil: return .portuguese
+        case .polish: return .polish
+        case .russian: return .russian
+        case .ukrainian: return .ukrainian
+        case .automatic, .simplifiedChinese, .turkish, .japanese, .korean, .hindi, .malayalam:
+            return nil
+        }
     }
 }

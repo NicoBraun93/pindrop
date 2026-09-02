@@ -22,7 +22,8 @@ class ModelManager {
         "openai_whisper-small.en",
         "openai_whisper-medium",
         "openai_whisper-large-v3_turbo",
-        "parakeet-tdt-0.6b-v2"
+        "parakeet-tdt-0.6b-v2",
+        "parakeet-tdt-0.6b-v3"
     ]
 
     nonisolated static let multilingualRecommendedModelNames = [
