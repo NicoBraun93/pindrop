@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Pindrop が macOS でどのように表示されるか、およびデスクトップ セッションで開始されるかどうかを制御します。"
 controls:
+  _self: ""
 copied:
   _self: "コピーしました！"
   to_clipboard: "クリップボードにコピーしました"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "押し続けると録音、放すと停止および転写"
   to_record_release_to_transcribe: "押し続けると録音、放すと文字起こし"
   to_record_then_release_to_open_the_note_edi: "押し続けて録音し、離すと文字起こし付きのノート編集が開きます。"
+  only: "長押しのみ"
+  or_double_press: "長押しまたは2回押し"
+  the_push_to_talk_shortcut_to_dictate_releas: "プッシュツートークのショートカットを押している間だけ音声入力します。離すと停止します。"
+  the_push_to_talk_shortcut_to_dictate_or_pre: "プッシュツートークのショートカットを押している間だけ音声入力します。2回押すと、もう一度押すまでハンズフリーで録音を続けます。"
 home:
   _self: "ホーム"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "語彙がありません"
   transcripts_audio_prompts_file_names_or_perso: "文字起こし、音声、プロンプト、ファイル名、個人的な内容は一切ありません — 決して。"
   contributions_yet_pairs_are_stored_when_ai_en: "まだ提供データはありません。AI 強化または手動編集で文字起こしが変更されると、ペアが保存されます。"
+  text_field_focused_transcript_copied_to_clipb: "テキストフィールドがフォーカスされていません。文字起こしをクリップボードにコピーしました。"
 not:
   assigned: "割り当てられていません"
   enough_voice_data_yet: "音声データがまだ不足しています"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "プロバイダー、プロンプト、およびバイブ モード コントロール"
 push:
   to_talk: "プッシュツートーク"
+  to_talk_gesture: "プッシュツートークの操作"
 queue:
   complete_restored: "キューが完了しました — %@ を復元しました"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "入力 %@ / 出力 %@ トークン"
   in_out_thinking: "入力 %@ / 出力 %@ / 思考 %@ トークン"
+only:
+  paste_into_text_fields: "テキストフィールドにのみ貼り付ける"
+when:
+  the_focused_element_is_not_a_text_field_the: "フォーカスされている要素がテキストフィールドでない場合、文字起こしは貼り付けずにクリップボードへコピーされます。"

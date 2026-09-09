@@ -657,6 +657,27 @@ final class StreamingSessionController {
                     variant: .copied
                 )
             )
+        case .noFocusedTextField:
+            var actions: [ToastAction] = []
+            if let snapshot = result.previousClipboardSnapshot {
+                actions.append(
+                    ToastAction(title: localized("Undo", locale: locale), role: .primary) { [weak self] in
+                        let restored = self?.outputManager.restoreClipboardSnapshot(snapshot) ?? false
+                        if restored {
+                            Log.output.info("Restored clipboard after copy undo")
+                        } else {
+                            Log.output.error("Failed to restore clipboard after copy undo")
+                        }
+                    }
+                )
+            }
+            toastService.show(
+                ToastPayload(
+                    message: localized("No text field focused. Transcript copied to clipboard.", locale: locale),
+                    actions: actions,
+                    variant: .copied
+                )
+            )
         case .pasteFailed, nil:
             toastService.show(
                 ToastPayload(

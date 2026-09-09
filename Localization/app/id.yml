@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Kontrol bagaimana Pindrop muncul di macOS dan apakah Pindrop dimulai dengan sesi desktop Anda."
 controls:
+  _self: ""
 copied:
   _self: "Disalin!"
   to_clipboard: "Disalin ke papan klip"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Tahan untuk merekam, lepaskan untuk berhenti dan menyalin"
   to_record_release_to_transcribe: "Tahan untuk merekam, lepaskan untuk menyalin"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Hanya tahan"
+  or_double_press: "Tahan atau tekan dua kali"
+  the_push_to_talk_shortcut_to_dictate_releas: "Tahan pintasan tekan untuk bicara untuk mendikte; lepaskan untuk berhenti."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Tahan pintasan tekan untuk bicara untuk mendikte, atau tekan dua kali agar perekaman bebas genggam berlanjut sampai Anda menekannya lagi."
 home:
   _self: "Beranda"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Tidak Ada Kata Kosakata"
   transcripts_audio_prompts_file_names_or_perso: "Tidak ada transkripsi, audio, prompt, nama file, atau konten pribadi — tidak pernah."
   contributions_yet_pairs_are_stored_when_ai_en: "Belum ada kontribusi. Pasangan disimpan saat penyempurnaan AI atau suntingan manual mengubah transkripsi."
+  text_field_focused_transcript_copied_to_clipb: "Tidak ada bidang teks yang difokuskan. Transkrip disalin ke papan klip."
 not:
   assigned: "Tidak ditugaskan"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Penyedia, petunjuk, dan kontrol mode getaran"
 push:
   to_talk: "Dorong untuk Bicara"
+  to_talk_gesture: "Gerakan tekan untuk bicara"
 queue:
   complete_restored: "Antrean selesai — %@ dipulihkan"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ token masuk / %@ keluar"
   in_out_thinking: "%@ token masuk / %@ keluar / %@ berpikir"
+only:
+  paste_into_text_fields: "Hanya tempel di bidang teks"
+when:
+  the_focused_element_is_not_a_text_field_the: "Jika elemen yang difokuskan bukan bidang teks, transkrip disalin ke papan klip alih-alih ditempel."

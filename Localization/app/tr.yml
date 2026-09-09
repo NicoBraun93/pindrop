@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Pindrop'un macOS'ta nasıl görüneceğini ve masaüstü oturumunuzla başlayıp başlamayacağını kontrol edin."
 controls:
+  _self: ""
 copied:
   _self: "Kopyalandı!"
   to_clipboard: "Panoya kopyalandı"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Kaydetmek için basılı tutun, durdurmak ve metne dönüştürmek için bırakın"
   to_record_release_to_transcribe: "Kaydetmek için basılı tutun, metne dönüştürmek için bırakın"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Yalnızca basılı tutma"
+  or_double_press: "Basılı tutma veya çift basma"
+  the_push_to_talk_shortcut_to_dictate_releas: "Dikte etmek için bas-konuş kısayolunu basılı tutun; durdurmak için bırakın."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Dikte etmek için bas-konuş kısayolunu basılı tutun ya da tekrar basana kadar eller serbest kayda devam etmek için iki kez basın."
 home:
   _self: "Ana Sayfa"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Kelime Bilgisi Yok"
   transcripts_audio_prompts_file_names_or_perso: "Hiçbir transkripsiyon, ses, istem, dosya adı veya kişisel içerik yok — asla."
   contributions_yet_pairs_are_stored_when_ai_en: "Henüz katkı yok. AI geliştirmesi veya el ile düzenlemeler bir transkripsiyonu değiştirdiğinde çiftler depolanır."
+  text_field_focused_transcript_copied_to_clipb: "Odaklanılan metin alanı yok. Döküm panoya kopyalandı."
 not:
   assigned: "Atanmadı"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Sağlayıcılar, istemler ve titreşim modu kontrolleri"
 push:
   to_talk: "Bas-Konuş"
+  to_talk_gesture: "Bas-konuş hareketi"
 queue:
   complete_restored: "Kuyruk tamamlandı — %@ geri yüklendi"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ giriş / %@ çıkış tokenı"
   in_out_thinking: "%@ giriş / %@ çıkış / %@ düşünme tokenı"
+only:
+  paste_into_text_fields: "Yalnızca metin alanlarına yapıştır"
+when:
+  the_focused_element_is_not_a_text_field_the: "Odaklanılan öğe bir metin alanı değilse, döküm yapıştırılmak yerine panoya kopyalanır."

@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Styr hur Pindrop visas i macOS och om det börjar med din skrivbordssession."
 controls:
+  _self: ""
 copied:
   _self: "Kopierade!"
   to_clipboard: "Kopierat till urklipp"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Håll ned för att spela in, släpp för att stoppa och transkribera"
   to_record_release_to_transcribe: "Håll ned för att spela in, släpp för att transkribera"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Endast håll ned"
+  or_double_press: "Håll ned eller tryck två gånger"
+  the_push_to_talk_shortcut_to_dictate_releas: "Håll ned push-to-talk-genvägen för att diktera; släpp för att stoppa."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Håll ned push-to-talk-genvägen för att diktera, eller tryck två gånger för att spela in handsfree tills du trycker igen."
 home:
   _self: "Hem"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Inga ordförråd"
   transcripts_audio_prompts_file_names_or_perso: "Inga transkriptioner, ljud, prompter, filnamn eller personligt innehåll — aldrig."
   contributions_yet_pairs_are_stored_when_ai_en: "Inga bidrag ännu. Par lagras när AI-förbättring eller manuella redigeringar ändrar en transkription."
+  text_field_focused_transcript_copied_to_clipb: "Inget textfält i fokus. Transkriptionen kopierades till urklipp."
 not:
   assigned: "Ej tilldelad"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Providers, uppmaningar och vibelägeskontroller"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Push-to-talk-gest"
 queue:
   complete_restored: "Kö klar — återställde %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ in / %@ ut tokens"
   in_out_thinking: "%@ in / %@ ut / %@ tanke-tokens"
+only:
+  paste_into_text_fields: "Klistra bara in i textfält"
+when:
+  the_focused_element_is_not_a_text_field_the: "När det fokuserade elementet inte är ett textfält kopieras transkriptionen till urklipp i stället för att klistras in."

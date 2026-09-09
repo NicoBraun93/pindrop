@@ -190,6 +190,7 @@ struct HotkeyBindingSnapshot: Equatable {
 
 struct HotkeySettingsSnapshot: Equatable {
     let hasCompletedOnboarding: Bool
+    let pushToTalkActivationMode: PushToTalkActivationMode
     let pushToTalk: HotkeyBindingSnapshot
     let toggle: HotkeyBindingSnapshot
     let copyLastTranscript: HotkeyBindingSnapshot
@@ -201,6 +202,7 @@ struct HotkeySettingsSnapshot: Equatable {
 
 struct SettingsObservationSnapshot: Equatable {
     let outputMode: String
+    let pasteOnlyIntoTextFields: Bool
     let automaticDictionaryLearningEnabled: Bool
     let selectedInputDeviceUID: String
     let selectedAppLocale: AppLocale
@@ -492,6 +494,9 @@ final class AppCoordinator {
     let modelManager: ModelManager
     let aiEnhancementService: AIEnhancementService
     let hotkeyManager: HotkeyManager
+    /// Mirror of `hotkeyManager.chordGuard`, held nonisolated so the CGEvent tap can
+    /// check it without hopping to the main actor on every keystroke.
+    private nonisolated let hotkeyChordGuard: HotkeyChordGuard
     let launchAtLoginManager: LaunchAtLoginManager
     let updateService: UpdateService
     let outputManager: OutputManager
@@ -689,6 +694,7 @@ final class AppCoordinator {
         self.modelManager = ModelManager()
         self.aiEnhancementService = AIEnhancementService()
         self.hotkeyManager = HotkeyManager()
+        self.hotkeyChordGuard = self.hotkeyManager.chordGuard
         self.launchAtLoginManager = LaunchAtLoginManager()
         self.updateService = UpdateService()
         self.settingsStore = SettingsStore()
@@ -718,7 +724,10 @@ final class AppCoordinator {
         }
         
         let initialOutputMode: OutputMode = settingsStore.outputMode == "directInsert" ? .directInsert : .clipboard
-        self.outputManager = OutputManager(outputMode: initialOutputMode)
+        self.outputManager = OutputManager(
+            outputMode: initialOutputMode,
+            requiresFocusedTextField: settingsStore.pasteOnlyIntoTextFields
+        )
         self.contributionService = ContributionService(
             modelContext: modelContext,
             settingsStore: settingsStore
@@ -1676,21 +1685,27 @@ final class AppCoordinator {
                 modifiers: binding.modifiers,
                 registrationState: &registrationState
             ) {
+                let usesDoubleTap = settingsStore.pushToTalkActivationMode == .holdOrDoubleTap
                 let didRegister = hotkeyManager.registerHotkey(
                     keyCode: binding.keyCode,
                     modifiers: binding.modifiers,
                     identifier: "push-to-talk",
-                    mode: .pushToTalk,
-                    onKeyDown: { [weak self] in
+                    mode: usesDoubleTap ? .holdOrDoubleTap : .pushToTalk,
+                    onKeyDown: usesDoubleTap ? nil : { [weak self] in
                         Task { @MainActor in
                             await self?.handlePushToTalkStart()
                         }
                     },
-                    onKeyUp: { [weak self] in
+                    onKeyUp: usesDoubleTap ? nil : { [weak self] in
                         Task { @MainActor in
                             await self?.handlePushToTalkEnd()
                         }
-                    }
+                    },
+                    onActivation: usesDoubleTap ? { [weak self] activation in
+                        Task { @MainActor in
+                            await self?.handlePushToTalkActivation(activation)
+                        }
+                    } : nil
                 )
 
                 if !didRegister {
@@ -1990,6 +2005,7 @@ final class AppCoordinator {
     private func currentSettingsObservationSnapshot() -> SettingsObservationSnapshot {
         SettingsObservationSnapshot(
             outputMode: settingsStore.outputMode,
+            pasteOnlyIntoTextFields: settingsStore.pasteOnlyIntoTextFields,
             automaticDictionaryLearningEnabled: settingsStore.automaticDictionaryLearningEnabled,
             selectedInputDeviceUID: settingsStore.selectedInputDeviceUID,
             selectedAppLocale: settingsStore.selectedAppLocale,
@@ -2002,6 +2018,7 @@ final class AppCoordinator {
             streamingFeatureEnabled: settingsStore.streamingFeatureEnabled,
             hotkeys: HotkeySettingsSnapshot(
                 hasCompletedOnboarding: settingsStore.hasCompletedOnboarding,
+                pushToTalkActivationMode: settingsStore.pushToTalkActivationMode,
                 pushToTalk: HotkeyBindingSnapshot(
                     hotkey: settingsStore.pushToTalkHotkey,
                     keyCode: settingsStore.pushToTalkHotkeyCode,
@@ -2060,6 +2077,10 @@ final class AppCoordinator {
                         if mode == .directInsert {
                             self.ensureAccessibilityPermissionForDirectInsert(trigger: "settings-change", showFallbackAlert: true)
                         }
+                    }
+
+                    if previousSnapshot.pasteOnlyIntoTextFields != snapshot.pasteOnlyIntoTextFields {
+                        self.outputManager.setRequiresFocusedTextField(snapshot.pasteOnlyIntoTextFields)
                     }
 
                     if previousSnapshot.selectedInputDeviceUID != snapshot.selectedInputDeviceUID {
@@ -2776,6 +2797,23 @@ final class AppCoordinator {
         }
     }
     
+    /// Routes the one-key hold/double-tap gesture. A hold behaves exactly like
+    /// classic push-to-talk; a double tap latches a hands-free session through the
+    /// same toggle path the dedicated toggle hotkey uses, so both gestures share
+    /// their start/stop rules.
+    private func handlePushToTalkActivation(_ activation: HotkeyManager.HotkeyActivation) async {
+        switch activation {
+        case .holdStart:
+            await handlePushToTalkStart()
+        case .holdStop:
+            await handlePushToTalkEnd()
+        case .latchStart, .latchStop:
+            await handleToggleRecording(source: .hotkeyToggle)
+        case .cancel:
+            cancelCurrentOperation(source: "hotkey-chord")
+        }
+    }
+
     private func handlePushToTalkStart() async {
         guard !isRecording && !isProcessing else { return }
         guard NoteAppendGate.canStartGlobalDictation(isNoteAppendListening: isNoteAppendMode) else {
@@ -4324,6 +4362,27 @@ final class AppCoordinator {
                     variant: .copied
                 )
             )
+        case .noFocusedTextField:
+            var actions: [ToastAction] = []
+            if let snapshot = result.previousClipboardSnapshot {
+                actions.append(
+                    ToastAction(title: localized("Undo", locale: locale), role: .primary) { [weak self] in
+                        let restored = self?.outputManager.restoreClipboardSnapshot(snapshot) ?? false
+                        if restored {
+                            Log.output.info("Restored clipboard after copy undo")
+                        } else {
+                            Log.output.error("Failed to restore clipboard after copy undo")
+                        }
+                    }
+                )
+            }
+            toastService.show(
+                ToastPayload(
+                    message: localized("No text field focused. Transcript copied to clipboard.", locale: locale),
+                    actions: actions,
+                    variant: .copied
+                )
+            )
         case .pasteFailed, nil:
             toastService.show(
                 ToastPayload(
@@ -4724,6 +4783,14 @@ final class AppCoordinator {
 
         let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
         guard keyCode == 53 else {
+            // A regular keystroke during a hold-or-double-tap press means the user was
+            // typing a chord (⌃C and friends), not starting dictation.
+            if hotkeyChordGuard.isArmed {
+                Task { @MainActor [weak self] in
+                    guard let self, !self.isShutdown else { return }
+                    self.hotkeyManager.handleForeignKeyDown()
+                }
+            }
             guard liveContextKeyRefreshGate.claim(
                 now: ProcessInfo.processInfo.systemUptime,
                 minimumInterval: 0.75

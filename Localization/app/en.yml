@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Control how Pindrop appears in macOS and whether it starts with your desktop session."
 controls:
+  _self: ""
 copied:
   _self: "Copied!"
   to_clipboard: "Copied to clipboard"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Hold to record, release to stop and transcribe"
   to_record_release_to_transcribe: "Hold to record, release to transcribe"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Hold only"
+  or_double_press: "Hold or double-press"
+  the_push_to_talk_shortcut_to_dictate_releas: "Hold the push-to-talk shortcut to dictate; release to stop."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Hold the push-to-talk shortcut to dictate, or press it twice to keep recording hands-free until you press it again."
 home:
   _self: "Home"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "No Vocabulary Words"
   transcripts_audio_prompts_file_names_or_perso: "No transcripts, audio, prompts, file names, or personal content — ever."
   contributions_yet_pairs_are_stored_when_ai_en: "No contributions yet. Pairs are stored when AI enhancement or manual edits change a transcript."
+  text_field_focused_transcript_copied_to_clipb: "No text field focused. Transcript copied to clipboard."
 not:
   assigned: "Not assigned"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -945,6 +951,7 @@ providers:
   prompts_and_vibe_mode_controls: "Providers, prompts, and vibe mode controls"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Push-to-Talk Gesture"
 queue:
   complete_restored: "Queue complete — restored %@"
 quickly:
@@ -1595,3 +1602,7 @@ total:
 tokens:
   in_out: "%@ in / %@ out tokens"
   in_out_thinking: "%@ in / %@ out / %@ thinking tokens"
+only:
+  paste_into_text_fields: "Only paste into text fields"
+when:
+  the_focused_element_is_not_a_text_field_the: "When the focused element is not a text field, the transcript is copied to the clipboard instead of pasted."

@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Ελέγξτε πώς εμφανίζεται το Pindrop στο macOS και εάν ξεκινά με την περίοδο λειτουργίας του υπολογιστή σας."
 controls:
+  _self: ""
 copied:
   _self: "Αντιγράφηκε!"
   to_clipboard: "Αντιγράφηκε στο πρόχειρο"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Κρατήστε πατημένο για εγγραφή, αφήστε το για διακοπή και μεταγραφή"
   to_record_release_to_transcribe: "Κρατήστε πατημένο για εγγραφή, αφήστε το για μεταγραφή"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Μόνο κράτημα"
+  or_double_press: "Κράτημα ή διπλό πάτημα"
+  the_push_to_talk_shortcut_to_dictate_releas: "Κρατήστε πατημένη τη συντόμευση push-to-talk για υπαγόρευση· αφήστε την για διακοπή."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Κρατήστε πατημένη τη συντόμευση push-to-talk για υπαγόρευση ή πατήστε την δύο φορές για συνεχή εγγραφή χωρίς χέρια μέχρι να την πατήσετε ξανά."
 home:
   _self: "Αρχική"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Χωρίς λεξιλογικές λέξεις"
   transcripts_audio_prompts_file_names_or_perso: "Καμία μεταγραφή, ήχος, προτροπή, όνομα αρχείου ή προσωπικό περιεχόμενο — ποτέ."
   contributions_yet_pairs_are_stored_when_ai_en: "Δεν υπάρχουν συνεισφορές ακόμη. Τα ζεύγη αποθηκεύονται όταν η βελτίωση με AI ή οι μη αυτόματες επεξεργασίες αλλάζουν μια μεταγραφή."
+  text_field_focused_transcript_copied_to_clipb: "Δεν υπάρχει εστιασμένο πεδίο κειμένου. Η απομαγνητοφώνηση αντιγράφηκε στο πρόχειρο."
 not:
   assigned: "Δεν έχει ανατεθεί"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Στοιχεία ελέγχου παρόχων, μηνυμάτων προτροπής και λειτουργίας vibe"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Χειρονομία push-to-talk"
 queue:
   complete_restored: "Η ουρά ολοκληρώθηκε — έγινε επαναφορά σε %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ εισόδου / %@ εξόδου tokens"
   in_out_thinking: "%@ εισόδου / %@ εξόδου / %@ σκέψης tokens"
+only:
+  paste_into_text_fields: "Επικόλληση μόνο σε πεδία κειμένου"
+when:
+  the_focused_element_is_not_a_text_field_the: "Όταν το εστιασμένο στοιχείο δεν είναι πεδίο κειμένου, η απομαγνητοφώνηση αντιγράφεται στο πρόχειρο αντί να επικολληθεί."

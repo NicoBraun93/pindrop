@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Kontroller, hvordan Pindrop vises i macOS, og om det starter med din skrivebordssession."
 controls:
+  _self: ""
 copied:
   _self: "Kopieret!"
   to_clipboard: "Kopieret til udklipsholder"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Hold nede for at optage, slip for at stoppe og transskribere"
   to_record_release_to_transcribe: "Hold nede for at optage, slip for at transskribere"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Kun hold nede"
+  or_double_press: "Hold nede eller tryk to gange"
+  the_push_to_talk_shortcut_to_dictate_releas: "Hold push-to-talk-genvejen nede for at diktere; slip for at stoppe."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Hold push-to-talk-genvejen nede for at diktere, eller tryk to gange for at optage håndfrit, indtil du trykker igen."
 home:
   _self: "Hjem"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Ingen ordforråd"
   transcripts_audio_prompts_file_names_or_perso: "Ingen transskriptioner, lyd, prompter, filnavne eller personligt indhold — aldrig."
   contributions_yet_pairs_are_stored_when_ai_en: "Ingen bidrag endnu. Par gemmes, når AI-forbedring eller manuelle redigeringer ændrer en transskription."
+  text_field_focused_transcript_copied_to_clipb: "Intet tekstfelt i fokus. Transskription kopieret til udklipsholder."
 not:
   assigned: "Ikke tildelt"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Udbydere, prompter og vibetilstandskontroller"
 push:
   to_talk: "Tryk for at tale"
+  to_talk_gesture: "Push-to-talk-bevægelse"
 queue:
   complete_restored: "Kø fuldført — gendannede %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ ind / %@ ud tokens"
   in_out_thinking: "%@ ind / %@ ud / %@ tænke-tokens"
+only:
+  paste_into_text_fields: "Indsæt kun i tekstfelter"
+when:
+  the_focused_element_is_not_a_text_field_the: "Når det fokuserede element ikke er et tekstfelt, kopieres transskriptionen til udklipsholderen i stedet for at blive indsat."

@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "تحكم في كيفية ظهور Pindrop في نظام التشغيل macOS وما إذا كان سيبدأ بجلسة سطح المكتب لديك."
 controls:
+  _self: ""
 copied:
   _self: "منسوخ!"
   to_clipboard: "تم النسخ إلى الحافظة"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "اضغط باستمرار للتسجيل، ثم حرر للإيقاف والنسخ"
   to_record_release_to_transcribe: "اضغط للتسجيل، ثم حرر للنسخ"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "الضغط المستمر فقط"
+  or_double_press: "الضغط المستمر أو الضغط مرتين"
+  the_push_to_talk_shortcut_to_dictate_releas: "اضغط مع الاستمرار على اختصار اضغط للتحدث للإملاء؛ حرره للإيقاف."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "اضغط مع الاستمرار على اختصار اضغط للتحدث للإملاء، أو اضغط عليه مرتين لمواصلة التسجيل دون استخدام اليدين حتى تضغط عليه مرة أخرى."
 home:
   _self: "الرئيسية"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "لا توجد كلمات المفردات"
   transcripts_audio_prompts_file_names_or_perso: "لا نسخ ولا صوت ولا مطالبات ولا أسماء ملفات ولا محتوى شخصي — أبدًا."
   contributions_yet_pairs_are_stored_when_ai_en: "لا مساهمات بعد. تُخزَّن الأزواج عندما يغيّر التحسين بالذكاء الاصطناعي أو التعديلات اليدوية نسخًا."
+  text_field_focused_transcript_copied_to_clipb: "لا يوجد حقل نص محدد. تم نسخ النص المفرغ إلى الحافظة."
 not:
   assigned: "لم يتم تعيينه"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "الموفرون والمطالبات وعناصر التحكم في وضع vibe"
 push:
   to_talk: "اضغط لتتحدث"
+  to_talk_gesture: "إيماءة اضغط للتحدث"
 queue:
   complete_restored: "اكتملت قائمة الانتظار — تمت استعادة %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ إدخال / %@ إخراج من الرموز"
   in_out_thinking: "%@ إدخال / %@ إخراج / %@ تفكير من الرموز"
+only:
+  paste_into_text_fields: "اللصق في حقول النص فقط"
+when:
+  the_focused_element_is_not_a_text_field_the: "عندما لا يكون العنصر المحدد حقل نص، يتم نسخ النص المفرغ إلى الحافظة بدلاً من لصقه."

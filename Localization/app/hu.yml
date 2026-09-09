@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Szabályozza, hogy a Pindrop hogyan jelenjen meg a macOS rendszerben, és hogy elinduljon-e az asztali munkamenettel."
 controls:
+  _self: ""
 copied:
   _self: "Másolva!"
   to_clipboard: "Vágólapra másolva"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Tartsa lenyomva a rögzítéshez, engedje fel a leállításhoz és átíráshoz"
   to_record_release_to_transcribe: "Tartsa lenyomva a rögzítéshez, engedje fel az átíráshoz"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Csak nyomva tartás"
+  or_double_press: "Nyomva tartás vagy dupla lenyomás"
+  the_push_to_talk_shortcut_to_dictate_releas: "Tartsa nyomva a push-to-talk gyorsbillentyűt a diktáláshoz; engedje el a leállításhoz."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Tartsa nyomva a push-to-talk gyorsbillentyűt a diktáláshoz, vagy nyomja meg kétszer a kihangosított folyamatos rögzítéshez, amíg újra meg nem nyomja."
 home:
   _self: "Kezdőlap"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Nincs szótár"
   transcripts_audio_prompts_file_names_or_perso: "Se átiratok, se hang, se promptok, se fájlnevek, se személyes tartalom — soha."
   contributions_yet_pairs_are_stored_when_ai_en: "Még nincsenek hozzájárulások. A párok akkor tárolódnak, amikor az AI-fejlesztés vagy kézi szerkesztések megváltoztatnak egy átiratot."
+  text_field_focused_transcript_copied_to_clipb: "Nincs fókuszált szövegmező. Az átirat a vágólapra másolva."
 not:
   assigned: "Nincs hozzárendelve"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Szolgáltatók, felszólítások és hangulatmód vezérlők"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Push-to-talk mozdulat"
 queue:
   complete_restored: "Várólista kész — visszaállítva: %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ bemeneti / %@ kimeneti token"
   in_out_thinking: "%@ bemeneti / %@ kimeneti / %@ gondolkodási token"
+only:
+  paste_into_text_fields: "Csak szövegmezőkbe illessze be"
+when:
+  the_focused_element_is_not_a_text_field_the: "Ha a fókuszált elem nem szövegmező, az átirat a vágólapra kerül beillesztés helyett."

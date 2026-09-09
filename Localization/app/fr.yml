@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Contrôlez comment Pindrop apparaît dans macOS et s'il démarre avec votre session."
 controls:
+  _self: ""
 copied:
   _self: "Copié !"
   to_clipboard: "Copié dans le presse-papiers"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Maintenez pour enregistrer, relâchez pour arrêter et transcrire"
   to_record_release_to_transcribe: "Maintenez pour enregistrer, relâchez pour transcrire"
   to_record_then_release_to_open_the_note_edi: "Maintenez pour enregistrer, relâchez pour ouvrir l’éditeur de notes avec la transcription."
+  only: "Maintien seulement"
+  or_double_press: "Maintien ou double appui"
+  the_push_to_talk_shortcut_to_dictate_releas: "Maintenez le raccourci Push-to-Talk pour dicter ; relâchez pour arrêter."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Maintenez le raccourci Push-to-Talk pour dicter, ou appuyez deux fois pour continuer l'enregistrement mains libres jusqu'à ce que vous appuyiez de nouveau."
 home:
   _self: "Accueil"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Aucun mot de vocabulaire"
   transcripts_audio_prompts_file_names_or_perso: "Aucune transcription, aucun audio, aucun prompt, aucun nom de fichier ni contenu personnel — jamais."
   contributions_yet_pairs_are_stored_when_ai_en: "Aucune contribution pour l’instant. Les paires sont stockées lorsque l’amélioration par IA ou des modifications manuelles changent une transcription."
+  text_field_focused_transcript_copied_to_clipb: "Aucun champ de texte ciblé. Transcription copiée dans le presse-papiers."
 not:
   assigned: "Non attribué"
   enough_voice_data_yet: "Pas encore assez de données vocales"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Fournisseurs, prompts et contrôles du mode vibe"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Geste Push-to-Talk"
 queue:
   complete_restored: "File d'attente terminée — restauration de %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ tokens en entrée / %@ en sortie"
   in_out_thinking: "%@ tokens en entrée / %@ en sortie / %@ de réflexion"
+only:
+  paste_into_text_fields: "Coller uniquement dans les champs de texte"
+when:
+  the_focused_element_is_not_a_text_field_the: "Lorsque l'élément ciblé n'est pas un champ de texte, la transcription est copiée dans le presse-papiers au lieu d'être collée."

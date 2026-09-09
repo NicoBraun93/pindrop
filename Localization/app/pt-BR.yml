@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Controle como o Pindrop aparece no macOS e se ele inicia na sua sessão de desktop."
 controls:
+  _self: ""
 copied:
   _self: "Copiado!"
   to_clipboard: "Copiado para a área de transferência"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Segure para gravar, solte para parar e transcrever"
   to_record_release_to_transcribe: "Segure para gravar, solte para transcrever"
   to_record_then_release_to_open_the_note_edi: "Segure para gravar e solte para abrir o editor de notas com a transcrição."
+  only: "Somente segurar"
+  or_double_press: "Segurar ou pressionar duas vezes"
+  the_push_to_talk_shortcut_to_dictate_releas: "Segure o atalho de pressionar para falar para ditar; solte para parar."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Segure o atalho de pressionar para falar para ditar, ou pressione-o duas vezes para continuar gravando sem as mãos até pressioná-lo novamente."
 home:
   _self: "Início"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Sem palavras de vocabulário"
   transcripts_audio_prompts_file_names_or_perso: "Nenhuma transcrição, áudio, prompt, nome de arquivo ou conteúdo pessoal — nunca."
   contributions_yet_pairs_are_stored_when_ai_en: "Ainda não há contribuições. Os pares são armazenados quando o aprimoramento por IA ou edições manuais alteram uma transcrição."
+  text_field_focused_transcript_copied_to_clipb: "Nenhum campo de texto em foco. Transcrição copiada para a área de transferência."
 not:
   assigned: "Não atribuído"
   enough_voice_data_yet: "Ainda não há dados de voz suficientes"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Provedores, prompts e controles do modo vibe"
 push:
   to_talk: "Aperte para falar"
+  to_talk_gesture: "Gesto de pressionar para falar"
 queue:
   complete_restored: "Fila concluída — %@ restaurado"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ tokens de entrada / %@ de saída"
   in_out_thinking: "%@ tokens de entrada / %@ de saída / %@ de raciocínio"
+only:
+  paste_into_text_fields: "Colar apenas em campos de texto"
+when:
+  the_focused_element_is_not_a_text_field_the: "Quando o elemento em foco não é um campo de texto, a transcrição é copiada para a área de transferência em vez de colada."

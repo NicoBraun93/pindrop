@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "ควบคุมวิธีที่ Pindrop ปรากฏใน macOS และกำหนดว่าจะเริ่มต้นด้วยเซสชันเดสก์ท็อปของคุณหรือไม่"
 controls:
+  _self: ""
 copied:
   _self: "คัดลอก!"
   to_clipboard: "คัดลอกไปยังคลิปบอร์ดแล้ว"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "กดค้างไว้เพื่อบันทึก ปล่อยเพื่อหยุดและถอดเสียง"
   to_record_release_to_transcribe: "กดค้างไว้เพื่อบันทึก ปล่อยเพื่อถอดเสียง"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "กดค้างเท่านั้น"
+  or_double_press: "กดค้างหรือกดสองครั้ง"
+  the_push_to_talk_shortcut_to_dictate_releas: "กดค้างที่ปุ่มลัดกดเพื่อพูดเพื่อบอกข้อความ ปล่อยเพื่อหยุด"
+  the_push_to_talk_shortcut_to_dictate_or_pre: "กดค้างที่ปุ่มลัดกดเพื่อพูดเพื่อบอกข้อความ หรือกดสองครั้งเพื่อบันทึกแบบแฮนด์ฟรีต่อไปจนกว่าคุณจะกดอีกครั้ง"
 home:
   _self: "หน้าแรก"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "ไม่มีคำศัพท์"
   transcripts_audio_prompts_file_names_or_perso: "ไม่มีการถอดเสียง เสียง พรอมต์ ชื่อไฟล์ หรือเนื้อหาส่วนบุคคล — ไม่มีเลย"
   contributions_yet_pairs_are_stored_when_ai_en: "ยังไม่มีการมีส่วนร่วม คู่ข้อความจะถูกจัดเก็บเมื่อการปรับปรุงด้วย AI หรือการแก้ไขด้วยตนเองเปลี่ยนแปลงการถอดเสียง"
+  text_field_focused_transcript_copied_to_clipb: "ไม่มีช่องข้อความที่โฟกัส คัดลอกข้อความถอดเสียงไปยังคลิปบอร์ดแล้ว"
 not:
   assigned: "ไม่ได้รับมอบหมาย"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "ผู้ให้บริการ ข้อความแจ้ง และการควบคุมโหมดความรู้สึก"
 push:
   to_talk: "กดเพื่อพูดคุย"
+  to_talk_gesture: "ท่าทางกดเพื่อพูด"
 queue:
   complete_restored: "คิวเสร็จสมบูรณ์ — คืนค่า %@ แล้ว"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "โทเค็นเข้า %@ / ออก %@"
   in_out_thinking: "โทเค็นเข้า %@ / ออก %@ / คิด %@"
+only:
+  paste_into_text_fields: "วางเฉพาะในช่องข้อความ"
+when:
+  the_focused_element_is_not_a_text_field_the: "เมื่อองค์ประกอบที่โฟกัสไม่ใช่ช่องข้อความ ข้อความถอดเสียงจะถูกคัดลอกไปยังคลิปบอร์ดแทนการวาง"

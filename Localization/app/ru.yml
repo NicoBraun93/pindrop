@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Управляйте тем, как Pindrop отображается в macOS и запускается ли он во время сеанса рабочего стола."
 controls:
+  _self: ""
 copied:
   _self: "Скопировано!"
   to_clipboard: "Скопировано в буфер обмена"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Удерживайте, чтобы записать, отпустите, чтобы остановить и расшифровать"
   to_record_release_to_transcribe: "Удерживайте, чтобы записать, отпустите, чтобы расшифровать"
   to_record_then_release_to_open_the_note_edi: "Удерживайте для записи; отпустите, чтобы открыть редактор заметок с расшифровкой."
+  only: "Только удержание"
+  or_double_press: "Удержание или двойное нажатие"
+  the_push_to_talk_shortcut_to_dictate_releas: "Удерживайте сочетание push-to-talk для диктовки; отпустите, чтобы остановить."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Удерживайте сочетание push-to-talk для диктовки или нажмите его дважды, чтобы продолжить запись без рук, пока не нажмёте снова."
 home:
   _self: "Главная"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Нет словарных слов"
   transcripts_audio_prompts_file_names_or_perso: "Никаких транскрипций, аудио, промптов, имён файлов или личного контента — никогда."
   contributions_yet_pairs_are_stored_when_ai_en: "Пока нет материалов. Пары сохраняются, когда улучшение с помощью ИИ или ручные правки изменяют транскрипцию."
+  text_field_focused_transcript_copied_to_clipb: "Нет активного текстового поля. Расшифровка скопирована в буфер обмена."
 not:
   assigned: "Не назначено"
   enough_voice_data_yet: "Пока недостаточно голосовых данных"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Поставщики, подсказки и элементы управления режимом Vibe"
 push:
   to_talk: "Нажми и говори"
+  to_talk_gesture: "Жест push-to-talk"
 queue:
   complete_restored: "Очередь завершена — восстановлено %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ входных / %@ выходных токенов"
   in_out_thinking: "%@ входных / %@ выходных / %@ размышляющих токенов"
+only:
+  paste_into_text_fields: "Вставлять только в текстовые поля"
+when:
+  the_focused_element_is_not_a_text_field_the: "Если активный элемент не является текстовым полем, расшифровка копируется в буфер обмена вместо вставки."

@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "控制 Pindrop 在 macOS 中的显示方式以及是否随桌面会话启动。"
 controls:
+  _self: ""
 copied:
   _self: "已复制！"
   to_clipboard: "已复制到剪贴板"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "按住录制，释放以停止并转录"
   to_record_release_to_transcribe: "按住录制，释放以转录"
   to_record_then_release_to_open_the_note_edi: "按住录音，松开后打开带转写的笔记编辑器。"
+  only: "仅长按"
+  or_double_press: "长按或连按两次"
+  the_push_to_talk_shortcut_to_dictate_releas: "按住按键通话快捷键进行听写；松开即停止。"
+  the_push_to_talk_shortcut_to_dictate_or_pre: "按住按键通话快捷键进行听写，或连按两次以免手持续录音，直到再次按下为止。"
 home:
   _self: "主页"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "无词汇词"
   transcripts_audio_prompts_file_names_or_perso: "绝无转录、音频、提示词、文件名或个人内容 — 永不。"
   contributions_yet_pairs_are_stored_when_ai_en: "暂无贡献。当 AI 增强或手动编辑更改转录时，将存储文本对。"
+  text_field_focused_transcript_copied_to_clipb: "没有聚焦的文本框。转录内容已复制到剪贴板。"
 not:
   assigned: "未分配"
   enough_voice_data_yet: "语音数据尚不足"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "提供商、提示词和 vibe 模式控制"
 push:
   to_talk: "按键通话"
+  to_talk_gesture: "按键通话手势"
 queue:
   complete_restored: "队列已完成 — 已恢复 %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "输入 %@ / 输出 %@ 个 Token"
   in_out_thinking: "输入 %@ / 输出 %@ / 思考 %@ 个 Token"
+only:
+  paste_into_text_fields: "仅粘贴到文本框"
+when:
+  the_focused_element_is_not_a_text_field_the: "当聚焦的元素不是文本框时，转录内容会复制到剪贴板而不是粘贴。"

@@ -217,6 +217,21 @@ struct DictationSettingsView: View {
                     .accessibilityIdentifier("settings.picker.outputMode")
                 }
 
+                if settings.outputMode == DictationOutputOption.directInsert.rawValue {
+                    SettingsRow(showSeparator: true) {
+                        SettingsRowLabel(
+                            title: localized("Only paste into text fields", locale: locale),
+                            subtitle: localized("When the focused element is not a text field, the transcript is copied to the clipboard instead of pasted.", locale: locale)
+                        )
+                    } control: {
+                        SettingsToggle(
+                            isOn: $settings.pasteOnlyIntoTextFields,
+                            label: localized("Only paste into text fields", locale: locale)
+                        )
+                            .accessibilityIdentifier("settings.toggle.pasteOnlyIntoTextFields")
+                    }
+                }
+
                 SettingsRow(showSeparator: true) {
                     SettingsRowLabel(title: localized("Add trailing space", locale: locale))
                 } control: {

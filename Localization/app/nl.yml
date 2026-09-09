@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Bepaal hoe Pindrop verschijnt in macOS en of het begint met uw desktopsessie."
 controls:
+  _self: ""
 copied:
   _self: "Gekopieerd!"
   to_clipboard: "Gekopieerd naar klembord"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Houd ingedrukt om op te nemen, laat los om te stoppen en te transcriberen"
   to_record_release_to_transcribe: "Houd ingedrukt om op te nemen, laat los om te transcriberen"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Alleen ingedrukt houden"
+  or_double_press: "Ingedrukt houden of dubbel drukken"
+  the_push_to_talk_shortcut_to_dictate_releas: "Houd de push-to-talk-sneltoets ingedrukt om te dicteren; laat los om te stoppen."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Houd de push-to-talk-sneltoets ingedrukt om te dicteren, of druk er twee keer op om handsfree door te blijven opnemen tot je er opnieuw op drukt."
 home:
   _self: "Home"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Geen woordenschatwoorden"
   transcripts_audio_prompts_file_names_or_perso: "Geen transcripties, audio, prompts, bestandsnamen of persoonlijke inhoud — nooit."
   contributions_yet_pairs_are_stored_when_ai_en: "Nog geen bijdragen. Paren worden opgeslagen wanneer AI-verbetering of handmatige bewerkingen een transcriptie wijzigen."
+  text_field_focused_transcript_copied_to_clipb: "Geen tekstveld met focus. Transcriptie naar klembord gekopieerd."
 not:
   assigned: "Niet toegewezen"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Providers, prompts en bedieningselementen voor de sfeermodus"
 push:
   to_talk: "Push-to-talk"
+  to_talk_gesture: "Push-to-talk-gebaar"
 queue:
   complete_restored: "Wachtrij voltooid — %@ hersteld"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ invoer- / %@ uitvoertokens"
   in_out_thinking: "%@ invoer- / %@ uitvoer- / %@ denktokens"
+only:
+  paste_into_text_fields: "Alleen in tekstvelden plakken"
+when:
+  the_focused_element_is_not_a_text_field_the: "Als het gefocuste element geen tekstveld is, wordt de transcriptie naar het klembord gekopieerd in plaats van geplakt."

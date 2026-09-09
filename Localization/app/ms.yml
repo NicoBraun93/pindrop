@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Kawal cara Pindrop muncul dalam macOS dan sama ada ia bermula dengan sesi desktop anda."
 controls:
+  _self: ""
 copied:
   _self: "disalin!"
   to_clipboard: "Disalin ke papan keratan"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Tahan untuk merakam, lepaskan untuk berhenti dan transkripsi"
   to_record_release_to_transcribe: "Tahan untuk merakam, lepaskan untuk menyalin"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Tahan sahaja"
+  or_double_press: "Tahan atau tekan dua kali"
+  the_push_to_talk_shortcut_to_dictate_releas: "Tahan pintasan tekan untuk bercakap untuk mengimlak; lepaskan untuk berhenti."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Tahan pintasan tekan untuk bercakap untuk mengimlak, atau tekan dua kali supaya rakaman bebas tangan diteruskan sehingga anda menekannya semula."
 home:
   _self: "Laman Utama"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Tiada Perbendaharaan Kata"
   transcripts_audio_prompts_file_names_or_perso: "Tiada transkripsi, audio, gesaan, nama fail, atau kandungan peribadi — tidak sekali-kali."
   contributions_yet_pairs_are_stored_when_ai_en: "Belum ada sumbangan. Pasangan disimpan apabila penambahbaikan AI atau suntingan manual mengubah transkripsi."
+  text_field_focused_transcript_copied_to_clipb: "Tiada medan teks difokuskan. Transkrip disalin ke papan keratan."
 not:
   assigned: "Tidak ditugaskan"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Pembekal, gesaan dan kawalan mod getaran"
 push:
   to_talk: "Tekan-untuk-Cakap"
+  to_talk_gesture: "Gerak isyarat tekan untuk bercakap"
 queue:
   complete_restored: "Barisan gilir selesai — %@ dipulihkan"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ token masuk / %@ keluar"
   in_out_thinking: "%@ token masuk / %@ keluar / %@ pemikiran"
+only:
+  paste_into_text_fields: "Tampal hanya dalam medan teks"
+when:
+  the_focused_element_is_not_a_text_field_the: "Apabila elemen yang difokuskan bukan medan teks, transkrip disalin ke papan keratan dan bukannya ditampal."

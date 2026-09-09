@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "MacOS-এ Pindrop কীভাবে উপস্থিত হয় এবং এটি আপনার ডেস্কটপ সেশন দিয়ে শুরু হয় কিনা তা নিয়ন্ত্রণ করুন।"
 controls:
+  _self: ""
 copied:
   _self: "কপি করা !"
   to_clipboard: "ক্লিপবোর্ডে কপি করা হয়েছে"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "রেকর্ড করতে ধরে রাখুন, থামাতে ছেড়ে দিন এবং প্রতিলিপি করুন"
   to_record_release_to_transcribe: "রেকর্ড করতে ধরে রাখুন, প্রতিলিপি করতে ছেড়ে দিন"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "শুধু ধরে রাখা"
+  or_double_press: "ধরে রাখা বা দুবার চাপা"
+  the_push_to_talk_shortcut_to_dictate_releas: "ডিকটেশনের জন্য পুশ-টু-টক শর্টকাট ধরে রাখুন; থামাতে ছেড়ে দিন।"
+  the_push_to_talk_shortcut_to_dictate_or_pre: "ডিকটেশনের জন্য পুশ-টু-টক শর্টকাট ধরে রাখুন, অথবা দুবার চাপুন যাতে আবার চাপা পর্যন্ত হাত ছাড়াই রেকর্ডিং চলতে থাকে।"
 home:
   _self: "হোম"
 hotkey:
@@ -739,6 +744,7 @@ no:
   vocabulary_words: "কোন ভোকাবুলারি শব্দ নেই"
   transcripts_audio_prompts_file_names_or_perso: "কোনো প্রতিলিপি, অডিও, প্রম্পট, ফাইলের নাম বা ব্যক্তিগত কনটেন্ট নয় — কখনও নয়।"
   contributions_yet_pairs_are_stored_when_ai_en: "এখনও কোনো অবদান নেই। AI উন্নতি বা ম্যানুয়াল সম্পাদনা কোনো প্রতিলিপি পরিবর্তন করলে জোড়া সংরক্ষিত হয়।"
+  text_field_focused_transcript_copied_to_clipb: "কোনো টেক্সট ফিল্ড ফোকাসে নেই। প্রতিলিপি ক্লিপবোর্ডে কপি করা হয়েছে।"
 not:
   assigned: "বরাদ্দ করা হয়নি"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -932,6 +938,7 @@ providers:
   prompts_and_vibe_mode_controls: "প্রদানকারী, প্রম্পট এবং ভাইব মোড নিয়ন্ত্রণ"
 push:
   to_talk: "পুশ-টু-টক"
+  to_talk_gesture: "পুশ-টু-টক অঙ্গভঙ্গি"
 queue:
   complete_restored: "কিউ সম্পূর্ণ হয়েছে — %@ পুনরুদ্ধার করা হয়েছে"
 quickly:
@@ -1586,3 +1593,7 @@ total:
 tokens:
   in_out: "%@ ইনপুট / %@ আউটপুট টোকেন"
   in_out_thinking: "%@ ইনপুট / %@ আউটপুট / %@ চিন্তন টোকেন"
+only:
+  paste_into_text_fields: "শুধু টেক্সট ফিল্ডে পেস্ট করুন"
+when:
+  the_focused_element_is_not_a_text_field_the: "ফোকাস করা উপাদানটি টেক্সট ফিল্ড না হলে প্রতিলিপি পেস্ট না করে ক্লিপবোর্ডে কপি করা হয়।"

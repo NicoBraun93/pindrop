@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Určete, jak se Pindrop zobrazí v macOS a zda se spustí s vaší relací na ploše."
 controls:
+  _self: ""
 copied:
   _self: "Zkopírováno!"
   to_clipboard: "Zkopírováno do schránky"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Podržením záznam nahrajete, uvolněním zastavíte a přepíšete"
   to_record_release_to_transcribe: "Podržením zaznamenáte, uvolněním přepíšete"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Pouze podržení"
+  or_double_press: "Podržení nebo dvojí stisknutí"
+  the_push_to_talk_shortcut_to_dictate_releas: "Podržte zkratku push-to-talk pro diktování; uvolněte pro ukončení."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Podržte zkratku push-to-talk pro diktování, nebo ji stiskněte dvakrát a nahrávejte bez rukou, dokud ji nestisknete znovu."
 home:
   _self: "Domů"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Žádná slova slovní zásoby"
   transcripts_audio_prompts_file_names_or_perso: "Žádné přepisy, zvuk, prompty, názvy souborů ani osobní obsah — nikdy."
   contributions_yet_pairs_are_stored_when_ai_en: "Zatím žádné příspěvky. Páry se ukládají, když vylepšení pomocí AI nebo ruční úpravy změní přepis."
+  text_field_focused_transcript_copied_to_clipb: "Žádné textové pole není zaměřeno. Přepis zkopírován do schránky."
 not:
   assigned: "Nezařazeno"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Poskytovatelé, výzvy a ovládací prvky režimu vibrací"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Gesto push-to-talk"
 queue:
   complete_restored: "Fronta dokončena — obnoveno %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ vstupních / %@ výstupních tokenů"
   in_out_thinking: "%@ vstupních / %@ výstupních / %@ uvažovacích tokenů"
+only:
+  paste_into_text_fields: "Vkládat pouze do textových polí"
+when:
+  the_focused_element_is_not_a_text_field_the: "Pokud zaměřený prvek není textové pole, přepis se zkopíruje do schránky místo vložení."

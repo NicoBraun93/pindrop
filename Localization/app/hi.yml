@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "नियंत्रित करें कि Pindrop macOS में कैसे दिखाई देता है और क्या यह आपके डेस्कटॉप सत्र से शुरू होता है।"
 controls:
+  _self: ""
 copied:
   _self: "नकल की गई!"
   to_clipboard: "क्लिपबोर्ड पर कॉपी किया गया"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "रिकॉर्ड करने के लिए दबाएँ, रोकने और प्रतिलेखन करने के लिए छोड़ें"
   to_record_release_to_transcribe: "रिकॉर्ड करने के लिए दबाए रखें, लिखने के लिए छोड़ें"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "केवल दबाए रखें"
+  or_double_press: "दबाए रखें या दो बार दबाएँ"
+  the_push_to_talk_shortcut_to_dictate_releas: "बोलकर लिखने के लिए पुश-टू-टॉक शॉर्टकट दबाए रखें; रोकने के लिए छोड़ दें।"
+  the_push_to_talk_shortcut_to_dictate_or_pre: "बोलकर लिखने के लिए पुश-टू-टॉक शॉर्टकट दबाए रखें, या दो बार दबाएँ ताकि दोबारा दबाने तक बिना हाथ लगाए रिकॉर्डिंग चलती रहे।"
 home:
   _self: "होम"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "कोई शब्दावली शब्द नहीं"
   transcripts_audio_prompts_file_names_or_perso: "कोई ट्रांसक्रिप्ट, ऑडियो, प्रॉम्प्ट, फ़ाइल नाम या व्यक्तिगत सामग्री नहीं — कभी नहीं।"
   contributions_yet_pairs_are_stored_when_ai_en: "अभी तक कोई योगदान नहीं। जब AI संवर्द्धन या मैन्युअल संपादन किसी ट्रांसक्रिप्ट को बदलते हैं, तो जोड़े संग्रहीत होते हैं।"
+  text_field_focused_transcript_copied_to_clipb: "कोई टेक्स्ट फ़ील्ड फ़ोकस में नहीं। ट्रांसक्रिप्ट क्लिपबोर्ड पर कॉपी किया गया।"
 not:
   assigned: "सौंपा नहीं गया है"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "प्रदाता, संकेत और वाइब मोड नियंत्रण"
 push:
   to_talk: "धक्का देकर बात करना"
+  to_talk_gesture: "पुश-टू-टॉक जेस्चर"
 queue:
   complete_restored: "कतार पूर्ण — %@ पुनर्स्थापित किया गया"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ इनपुट / %@ आउटपुट टोकन"
   in_out_thinking: "%@ इनपुट / %@ आउटपुट / %@ चिंतन टोकन"
+only:
+  paste_into_text_fields: "केवल टेक्स्ट फ़ील्ड में पेस्ट करें"
+when:
+  the_focused_element_is_not_a_text_field_the: "जब फ़ोकस किया गया तत्व टेक्स्ट फ़ील्ड न हो, तो ट्रांसक्रिप्ट पेस्ट करने के बजाय क्लिपबोर्ड पर कॉपी हो जाता है।"

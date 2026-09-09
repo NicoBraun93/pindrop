@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Controlați cum apare Pindrop în macOS și dacă începe cu sesiunea desktop."
 controls:
+  _self: ""
 copied:
   _self: "Copiat!"
   to_clipboard: "Copiat în clipboard"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Țineți apăsat pentru a înregistra, eliberați pentru a opri și a transcrie"
   to_record_release_to_transcribe: "Țineți apăsat pentru a înregistra, eliberați pentru a transcrie"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Doar ținere apăsată"
+  or_double_press: "Ținere apăsată sau dublă apăsare"
+  the_push_to_talk_shortcut_to_dictate_releas: "Ține apăsată scurtătura push-to-talk pentru a dicta; eliberează pentru a opri."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Ține apăsată scurtătura push-to-talk pentru a dicta sau apas-o de două ori pentru a înregistra hands-free până când o apeși din nou."
 home:
   _self: "Acasă"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Fără cuvinte de vocabular"
   transcripts_audio_prompts_file_names_or_perso: "Nicio transcriere, audio, prompt, nume de fișier sau conținut personal — niciodată."
   contributions_yet_pairs_are_stored_when_ai_en: "Nicio contribuție încă. Perechile sunt stocate când îmbunătățirea prin AI sau modificările manuale schimbă o transcriere."
+  text_field_focused_transcript_copied_to_clipb: "Niciun câmp de text focalizat. Transcrierea a fost copiată în clipboard."
 not:
   assigned: "Nu este atribuit"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Furnizori, solicitări și comenzi pentru modul vibrație"
 push:
   to_talk: "Apăsați pentru a vorbi"
+  to_talk_gesture: "Gest push-to-talk"
 queue:
   complete_restored: "Coadă finalizată — %@ restaurat"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ tokenuri de intrare / %@ de ieșire"
   in_out_thinking: "%@ tokenuri de intrare / %@ de ieșire / %@ de gândire"
+only:
+  paste_into_text_fields: "Lipește doar în câmpuri de text"
+when:
+  the_focused_element_is_not_a_text_field_the: "Când elementul focalizat nu este un câmp de text, transcrierea este copiată în clipboard în loc să fie lipită."

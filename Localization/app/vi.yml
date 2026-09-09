@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Kiểm soát cách Pindrop xuất hiện trong macOS và liệu nó có bắt đầu bằng phiên trên máy tính để bàn của bạn hay không."
 controls:
+  _self: ""
 copied:
   _self: "Đã sao chép!"
   to_clipboard: "Đã sao chép vào clipboard"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Giữ để ghi, thả ra để dừng và chép lại"
   to_record_release_to_transcribe: "Giữ để ghi, thả ra để chép lời"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Chỉ giữ"
+  or_double_press: "Giữ hoặc nhấn hai lần"
+  the_push_to_talk_shortcut_to_dictate_releas: "Giữ phím tắt nhấn để nói để đọc chính tả; thả ra để dừng."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Giữ phím tắt nhấn để nói để đọc chính tả, hoặc nhấn hai lần để tiếp tục ghi âm rảnh tay cho đến khi bạn nhấn lại."
 home:
   _self: "Trang chủ"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Không có từ vựng"
   transcripts_audio_prompts_file_names_or_perso: "Không có bản phiên âm, âm thanh, lời nhắc, tên tệp hay nội dung cá nhân — không bao giờ."
   contributions_yet_pairs_are_stored_when_ai_en: "Chưa có đóng góp nào. Các cặp được lưu khi cải thiện bằng AI hoặc chỉnh sửa thủ công thay đổi một bản phiên âm."
+  text_field_focused_transcript_copied_to_clipb: "Không có trường văn bản nào được chọn. Đã sao chép bản chép lời vào bảng nhớ tạm."
 not:
   assigned: "Chưa được chỉ định"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Nhà cung cấp, lời nhắc và điều khiển chế độ rung cảm"
 push:
   to_talk: "Nhấn để nói"
+  to_talk_gesture: "Cử chỉ nhấn để nói"
 queue:
   complete_restored: "Hàng đợi hoàn tất — đã khôi phục %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ token vào / %@ ra"
   in_out_thinking: "%@ token vào / %@ ra / %@ suy nghĩ"
+only:
+  paste_into_text_fields: "Chỉ dán vào trường văn bản"
+when:
+  the_focused_element_is_not_a_text_field_the: "Khi phần tử đang được chọn không phải là trường văn bản, bản chép lời sẽ được sao chép vào bảng nhớ tạm thay vì dán."

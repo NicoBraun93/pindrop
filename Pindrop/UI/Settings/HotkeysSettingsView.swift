@@ -107,6 +107,24 @@ struct HotkeysSettingsView: View {
         ]
     }
 
+    private var pushToTalkActivationModeLabel: String {
+        switch settings.pushToTalkActivationMode {
+        case .hold:
+            return localized("Hold only", locale: locale)
+        case .holdOrDoubleTap:
+            return localized("Hold or double-press", locale: locale)
+        }
+    }
+
+    private var pushToTalkActivationModeDescription: String {
+        switch settings.pushToTalkActivationMode {
+        case .hold:
+            return localized("Hold the push-to-talk shortcut to dictate; release to stop.", locale: locale)
+        case .holdOrDoubleTap:
+            return localized("Hold the push-to-talk shortcut to dictate, or press it twice to keep recording hands-free until you press it again.", locale: locale)
+        }
+    }
+
     var body: some View {
         SettingsPaneStack {
             SettingsGroupCard {
@@ -128,6 +146,29 @@ struct HotkeysSettingsView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 4)
                 .accessibilityLabel(aggregateConflictLine)
+
+            SettingsGroupCard {
+                SettingsRow(showSeparator: false) {
+                    SettingsRowLabel(
+                        title: localized("Push-to-Talk Gesture", locale: locale),
+                        subtitle: pushToTalkActivationModeDescription
+                    )
+                } control: {
+                    Menu {
+                        Button(localized("Hold only", locale: locale)) {
+                            settings.pushToTalkActivationMode = .hold
+                        }
+                        Button(localized("Hold or double-press", locale: locale)) {
+                            settings.pushToTalkActivationMode = .holdOrDoubleTap
+                        }
+                    } label: {
+                        SettingsMenuButton(title: pushToTalkActivationModeLabel)
+                    }
+                    .menuStyle(.borderlessButton)
+                    .menuIndicator(.hidden)
+                    .accessibilityIdentifier("settings.picker.pushToTalkActivationMode")
+                }
+            }
 
             SettingsGroupCard {
                 SettingsRow(showSeparator: false) {

@@ -305,6 +305,9 @@ final class OutputManager {
             case accessibilityUnavailable
             /// A paste was attempted and failed; the copy is a recovery, not a success.
             case pasteFailed
+            /// No editable text field was focused, and the user asked Pindrop to only
+            /// paste into text fields; the transcript waits on the clipboard instead.
+            case noFocusedTextField
         }
 
         let kind: Kind
@@ -353,6 +356,11 @@ final class OutputManager {
     private let accessibilityPermissionChecker: () -> Bool
     private let frontmostApplicationProvider: () -> NSRunningApplication?
     private let virtualMachineHostChecker: (String?) -> Bool
+    private let focusedTextFieldInspector: any FocusedTextFieldInspecting
+
+    /// When true, direct insert first checks that an editable text field is focused
+    /// and falls back to the clipboard when it positively is not.
+    private(set) var requiresFocusedTextField: Bool
 
     init(
         outputMode: OutputMode = .clipboard,
@@ -360,7 +368,9 @@ final class OutputManager {
         keySimulation: KeySimulationProtocol = SystemKeySimulation(),
         accessibilityPermissionChecker: @escaping () -> Bool = { AXIsProcessTrusted() },
         frontmostApplicationProvider: @escaping () -> NSRunningApplication? = { NSWorkspace.shared.frontmostApplication },
-        virtualMachineHostChecker: @escaping (String?) -> Bool = { VirtualMachineHostDetector.isVirtualMachineHost(bundleIdentifier: $0) }
+        virtualMachineHostChecker: @escaping (String?) -> Bool = { VirtualMachineHostDetector.isVirtualMachineHost(bundleIdentifier: $0) },
+        focusedTextFieldInspector: any FocusedTextFieldInspecting = SystemFocusedTextFieldInspector(),
+        requiresFocusedTextField: Bool = false
     ) {
         self.outputMode = outputMode
         self.clipboard = clipboard
@@ -368,10 +378,16 @@ final class OutputManager {
         self.accessibilityPermissionChecker = accessibilityPermissionChecker
         self.frontmostApplicationProvider = frontmostApplicationProvider
         self.virtualMachineHostChecker = virtualMachineHostChecker
+        self.focusedTextFieldInspector = focusedTextFieldInspector
+        self.requiresFocusedTextField = requiresFocusedTextField
     }
 
     func setOutputMode(_ mode: OutputMode) {
         self.outputMode = mode
+    }
+
+    func setRequiresFocusedTextField(_ requiresFocusedTextField: Bool) {
+        self.requiresFocusedTextField = requiresFocusedTextField
     }
 
     @discardableResult
@@ -446,6 +462,20 @@ final class OutputManager {
             let snapshot = try copyReplacingClipboard(text)
             return .copiedToClipboard(
                 reason: .accessibilityUnavailable,
+                previousClipboardSnapshot: snapshot,
+                destinationAppName: destination.name,
+                destinationAppBundleID: destination.bundleID
+            )
+        }
+
+        // Only `.notEditable` diverts the transcript. `.unknown` means Accessibility
+        // could not classify the focus, and a blind paste stays the better guess.
+        if requiresFocusedTextField,
+           focusedTextFieldInspector.focusedTextFieldState() == .notEditable {
+            Log.output.info("No editable text field focused in \(destination.bundleID ?? "unknown"); copying instead of pasting")
+            let snapshot = try copyReplacingClipboard(text)
+            return .copiedToClipboard(
+                reason: .noFocusedTextField,
                 previousClipboardSnapshot: snapshot,
                 destinationAppName: destination.name,
                 destinationAppBundleID: destination.bundleID

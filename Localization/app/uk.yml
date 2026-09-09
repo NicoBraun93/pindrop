@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Контролюйте, як Pindrop відображається в macOS і чи запускається він під час сеансу робочого столу."
 controls:
+  _self: ""
 copied:
   _self: "Скопійовано!"
   to_clipboard: "Скопійовано в буфер обміну"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Утримуйте, щоб записати, відпустіть, щоб зупинити та транскрибувати"
   to_record_release_to_transcribe: "Утримуйте, щоб записати, відпустіть, щоб транскрибувати"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Лише утримання"
+  or_double_press: "Утримання або подвійне натискання"
+  the_push_to_talk_shortcut_to_dictate_releas: "Утримуйте комбінацію push-to-talk для диктування; відпустіть, щоб зупинити."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Утримуйте комбінацію push-to-talk для диктування або натисніть її двічі, щоб продовжити запис без рук, доки не натиснете знову."
 home:
   _self: "Головна"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Немає словникових слів"
   transcripts_audio_prompts_file_names_or_perso: "Жодних транскрипцій, аудіо, промптів, імен файлів чи особистого вмісту — ніколи."
   contributions_yet_pairs_are_stored_when_ai_en: "Ще немає внесків. Пари зберігаються, коли покращення за допомогою AI або ручні редагування змінюють транскрипцію."
+  text_field_focused_transcript_copied_to_clipb: "Немає активного текстового поля. Транскрипцію скопійовано в буфер обміну."
 not:
   assigned: "Не призначено"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Постачальники, підказки та елементи керування режимом Vibe"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Жест push-to-talk"
 queue:
   complete_restored: "Чергу завершено — відновлено %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ вхідних / %@ вихідних токенів"
   in_out_thinking: "%@ вхідних / %@ вихідних / %@ токенів міркування"
+only:
+  paste_into_text_fields: "Вставляти лише в текстові поля"
+when:
+  the_focused_element_is_not_a_text_field_the: "Якщо активний елемент не є текстовим полем, транскрипція копіюється в буфер обміну замість вставлення."

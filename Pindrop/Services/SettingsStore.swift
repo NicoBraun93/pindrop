@@ -42,6 +42,17 @@ public enum SidebarPosition: String, CaseIterable, Identifiable {
    }
 }
 
+/// How the push-to-talk hotkey behaves when pressed.
+public enum PushToTalkActivationMode: String, CaseIterable, Sendable, Identifiable {
+   /// Hold the hotkey to dictate; releasing it ends the session.
+   case hold
+   /// Hold to dictate, or tap the hotkey twice to latch a hands-free session that a
+   /// later press ends.
+   case holdOrDoubleTap
+
+   public var id: String { rawValue }
+}
+
 /// How long dictation (`voiceRecording`) audio files are retained on disk.
 /// Imported / media-backed audio is never governed by this setting.
 public enum DictationAudioRetention: String, CaseIterable, Sendable, Identifiable {
@@ -277,6 +288,9 @@ final class SettingsStore: ObservableObject {
         // "clipboard" when clipboard mode became truly copy-only (see
         // migrateOutputModeToCopyOnlySemanticsIfNeeded).
         static let outputMode = "directInsert"
+        /// Direct insert checks for a focused text field first and falls back to the
+        /// clipboard when the focused element positively is not one.
+        static let pasteOnlyIntoTextFields = true
         static let selectedAppLocale = AppLocale.automatic.rawValue
         static let selectedLanguage = AppLanguage.automatic.rawValue
         static let themeMode = PindropThemeMode.system.rawValue
@@ -343,6 +357,8 @@ final class SettingsStore: ObservableObject {
          static let cancelOperationHotkeyCode = 0
          static let cancelOperationHotkeyModifiers = 0
 
+         static let pushToTalkActivationMode = PushToTalkActivationMode.hold.rawValue
+
          /// Escape-to-cancel requires a double press by default (the original
          /// behavior most users are trained on); OFF cancels on a single press.
          static let cancelRequiresDoubleEscape = true
@@ -397,10 +413,14 @@ final class SettingsStore: ObservableObject {
    var cancelOperationHotkeyModifiers: Int = Defaults.Hotkeys.cancelOperationHotkeyModifiers
    @AppStorage("cancelRequiresDoubleEscape", store: SettingsStoreRuntime.appStorageStore)
    var cancelRequiresDoubleEscape: Bool = Defaults.Hotkeys.cancelRequiresDoubleEscape
+   @AppStorage("pushToTalkActivationMode", store: SettingsStoreRuntime.appStorageStore)
+   var pushToTalkActivationModeRawValue: String = Defaults.Hotkeys.pushToTalkActivationMode
     @AppStorage("outputMode", store: SettingsStoreRuntime.appStorageStore) var outputMode: String =
         Defaults.outputMode
     @AppStorage("outputModeCopyOnlyMigrated", store: SettingsStoreRuntime.appStorageStore)
     var outputModeCopyOnlyMigrated: Bool = false
+    @AppStorage("pasteOnlyIntoTextFields", store: SettingsStoreRuntime.appStorageStore)
+    var pasteOnlyIntoTextFields: Bool = Defaults.pasteOnlyIntoTextFields
      @AppStorage("selectedAppLocale", store: SettingsStoreRuntime.appStorageStore)
      var selectedAppLocaleRawValue: String = Defaults.selectedAppLocale
      @AppStorage("selectedLanguage", store: SettingsStoreRuntime.appStorageStore)
@@ -628,6 +648,15 @@ final class SettingsStore: ObservableObject {
          }
       }
    }
+
+    var pushToTalkActivationMode: PushToTalkActivationMode {
+       get { PushToTalkActivationMode(rawValue: pushToTalkActivationModeRawValue) ?? .hold }
+       set {
+          guard pushToTalkActivationModeRawValue != newValue.rawValue else { return }
+          objectWillChange.send()
+          pushToTalkActivationModeRawValue = newValue.rawValue
+       }
+    }
 
     var selectedThemeMode: PindropThemeMode {
        get { PindropThemeMode(rawValue: themeMode) ?? .system }
@@ -1159,7 +1188,9 @@ final class SettingsStore: ObservableObject {
       cancelOperationHotkeyCode = Defaults.Hotkeys.cancelOperationHotkeyCode
       cancelOperationHotkeyModifiers = Defaults.Hotkeys.cancelOperationHotkeyModifiers
       cancelRequiresDoubleEscape = Defaults.Hotkeys.cancelRequiresDoubleEscape
+      pushToTalkActivationModeRawValue = Defaults.Hotkeys.pushToTalkActivationMode
       outputMode = Defaults.outputMode
+      pasteOnlyIntoTextFields = Defaults.pasteOnlyIntoTextFields
       // A fresh state is already on copy-only clipboard semantics; nothing to migrate.
       outputModeCopyOnlyMigrated = true
       programmaticFormattingEnabled = Defaults.programmaticFormattingEnabled

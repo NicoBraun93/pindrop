@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Controlla come appare Pindrop in macOS e se si avvia con la sessione desktop."
 controls:
+  _self: ""
 copied:
   _self: "Copiato!"
   to_clipboard: "Copiato negli appunti"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Tieni premuto per registrare, rilascia per interrompere e trascrivere"
   to_record_release_to_transcribe: "Tieni premuto per registrare, rilascia per trascrivere"
   to_record_then_release_to_open_the_note_edi: "Tieni premuto per registrare, rilascia per aprire l’editor note con la trascrizione."
+  only: "Solo tieni premuto"
+  or_double_press: "Tieni premuto o premi due volte"
+  the_push_to_talk_shortcut_to_dictate_releas: "Tieni premuta la scorciatoia push-to-talk per dettare; rilascia per fermare."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Tieni premuta la scorciatoia push-to-talk per dettare, oppure premila due volte per continuare a registrare a mani libere finché non la premi di nuovo."
 home:
   _self: "Inizio"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Nessuna parola del vocabolario"
   transcripts_audio_prompts_file_names_or_perso: "Nessuna trascrizione, nessun audio, nessun prompt, nessun nome di file né contenuto personale — mai."
   contributions_yet_pairs_are_stored_when_ai_en: "Ancora nessun contributo. Le coppie vengono salvate quando il miglioramento con IA o le modifiche manuali cambiano una trascrizione."
+  text_field_focused_transcript_copied_to_clipb: "Nessun campo di testo attivo. Trascrizione copiata negli appunti."
 not:
   assigned: "Non assegnato"
   enough_voice_data_yet: "Dati vocali ancora insufficienti"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Provider, prompt e controlli della modalità vibrazione"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Gesto push-to-talk"
 queue:
   complete_restored: "Coda completata — %@ ripristinato"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ token in ingresso / %@ in uscita"
   in_out_thinking: "%@ token in ingresso / %@ in uscita / %@ di ragionamento"
+only:
+  paste_into_text_fields: "Incolla solo nei campi di testo"
+when:
+  the_focused_element_is_not_a_text_field_the: "Quando l'elemento attivo non è un campo di testo, la trascrizione viene copiata negli appunti invece di essere incollata."

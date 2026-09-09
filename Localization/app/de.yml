@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Steuern Sie, wie Pindrop in macOS angezeigt wird und ob es mit Ihrer Desktop-Sitzung startet."
 controls:
+  _self: ""
 copied:
   _self: "Kopiert!"
   to_clipboard: "In die Zwischenablage kopiert"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Halten Sie zum Aufnehmen gedrückt, lassen Sie los, um zu stoppen und zu transkribieren"
   to_record_release_to_transcribe: "Halten Sie zum Aufnehmen gedrückt, lassen Sie los, um zu transkribieren"
   to_record_then_release_to_open_the_note_edi: "Halten zum Aufnehmen, loslassen öffnet den Notiz-Editor mit der Transkription."
+  only: "Nur halten"
+  or_double_press: "Halten oder doppelt drücken"
+  the_push_to_talk_shortcut_to_dictate_releas: "Push-to-Talk-Kurzbefehl gedrückt halten zum Diktieren; loslassen zum Beenden."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Push-to-Talk-Kurzbefehl gedrückt halten zum Diktieren, oder zweimal drücken, um freihändig weiter aufzunehmen, bis Sie ihn erneut drücken."
 home:
   _self: "Übersicht"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Keine Vokabelwörter"
   transcripts_audio_prompts_file_names_or_perso: "Keine Transkripte, kein Audio, keine Prompts, keine Dateinamen und keine persönlichen Inhalte – niemals."
   contributions_yet_pairs_are_stored_when_ai_en: "Noch keine Beiträge. Paare werden gespeichert, wenn KI-Verbesserung oder manuelle Bearbeitungen ein Transkript ändern."
+  text_field_focused_transcript_copied_to_clipb: "Kein Textfeld im Fokus. Transkription in die Zwischenablage kopiert."
 not:
   assigned: "Nicht zugewiesen"
   enough_voice_data_yet: "Noch nicht genug Sprachdaten"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Anbieter, Prompts und Vibe-Modus-Steuerungen"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Push-to-Talk-Geste"
 queue:
   complete_restored: "Warteschlange abgeschlossen — %@ wiederhergestellt"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ Eingabe- / %@ Ausgabe-Tokens"
   in_out_thinking: "%@ Eingabe- / %@ Ausgabe- / %@ Denk-Tokens"
+only:
+  paste_into_text_fields: "Nur in Textfelder einfügen"
+when:
+  the_focused_element_is_not_a_text_field_the: "Wenn das fokussierte Element kein Textfeld ist, wird die Transkription in die Zwischenablage kopiert statt eingefügt."

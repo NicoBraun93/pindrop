@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Kontroller hvordan Pindrop vises i macOS og om det starter med skrivebordsøkten."
 controls:
+  _self: ""
 copied:
   _self: "Kopiert!"
   to_clipboard: "Kopiert til utklippstavlen"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Hold for å ta opp, slipp for å stoppe og transkribere"
   to_record_release_to_transcribe: "Hold for å ta opp, slipp for å transkribere"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Bare hold inne"
+  or_double_press: "Hold inne eller trykk to ganger"
+  the_push_to_talk_shortcut_to_dictate_releas: "Hold push-to-talk-snarveien inne for å diktere; slipp for å stoppe."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Hold push-to-talk-snarveien inne for å diktere, eller trykk to ganger for å ta opp håndfritt til du trykker igjen."
 home:
   _self: "Hjem"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Ingen ordforråd"
   transcripts_audio_prompts_file_names_or_perso: "Ingen transkripsjoner, lyd, ledetekster, filnavn eller personlig innhold — aldri."
   contributions_yet_pairs_are_stored_when_ai_en: "Ingen bidrag ennå. Par lagres når AI-forbedring eller manuelle redigeringer endrer en transkripsjon."
+  text_field_focused_transcript_copied_to_clipb: "Ingen tekstfelt i fokus. Transkripsjon kopiert til utklippstavlen."
 not:
   assigned: "Ikke tildelt"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Leverandører, meldinger og vibemoduskontroller"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Push-to-talk-bevegelse"
 queue:
   complete_restored: "Kø fullført — gjenopprettet %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ inn / %@ ut tokens"
   in_out_thinking: "%@ inn / %@ ut / %@ tenke-tokens"
+only:
+  paste_into_text_fields: "Lim kun inn i tekstfelt"
+when:
+  the_focused_element_is_not_a_text_field_the: "Når det fokuserte elementet ikke er et tekstfelt, kopieres transkripsjonen til utklippstavlen i stedet for å limes inn."

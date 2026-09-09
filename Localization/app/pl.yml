@@ -241,6 +241,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Kontroluj wygląd Pindropa w systemie macOS oraz to, czy uruchamia się wraz z sesją pulpitu."
 controls:
+  _self: ""
 copied:
   _self: "Skopiowano!"
   to_clipboard: "Skopiowano do schowka"
@@ -522,6 +523,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Przytrzymaj, aby nagrać, zwolnij, aby zatrzymać i dokonać transkrypcji"
   to_record_release_to_transcribe: "Przytrzymaj, aby nagrać, zwolnij, aby dokonać transkrypcji"
   to_record_then_release_to_open_the_note_edi: "Przytrzymaj, aby nagrywać, a następnie puść, aby otworzyć edytor notatek z transkrypcją."
+  only: "Tylko przytrzymanie"
+  or_double_press: "Przytrzymanie lub dwukrotne naciśnięcie"
+  the_push_to_talk_shortcut_to_dictate_releas: "Przytrzymaj skrót push-to-talk, aby dyktować; zwolnij, aby zatrzymać."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Przytrzymaj skrót push-to-talk, aby dyktować, albo naciśnij go dwukrotnie, aby nagrywać bez użycia rąk, dopóki nie naciśniesz go ponownie."
 home:
   _self: "Start"
 hotkey:
@@ -749,6 +754,7 @@ no:
   vocabulary_words: "Brak słów ze słownika"
   transcripts_audio_prompts_file_names_or_perso: "Żadnych transkrypcji, dźwięku, promptów, nazw plików ani treści osobistych — nigdy."
   contributions_yet_pairs_are_stored_when_ai_en: "Brak wkładów. Pary są zapisywane, gdy ulepszanie przez AI lub ręczne zmiany zmodyfikują transkrypcję."
+  text_field_focused_transcript_copied_to_clipb: "Brak aktywnego pola tekstowego. Transkrypcja skopiowana do schowka."
 not:
   assigned: "Nieprzypisane"
   enough_voice_data_yet: "Za mało danych głosowych"
@@ -975,6 +981,7 @@ providers:
   prompts_and_vibe_mode_controls: "Dostawcy, monity i ustawienia trybu Vibe"
 push:
   to_talk: "Naciśnij i mów"
+  to_talk_gesture: "Gest push-to-talk"
 queue:
   complete_restored: "Kolejka ukończona — przywrócono %@"
 quickly:
@@ -1675,3 +1682,7 @@ total:
 tokens:
   in_out: "%@ tokenów wejściowych / %@ wyjściowych"
   in_out_thinking: "%@ tokenów wejściowych / %@ wyjściowych / %@ myślenia"
+only:
+  paste_into_text_fields: "Wklejaj tylko w pola tekstowe"
+when:
+  the_focused_element_is_not_a_text_field_the: "Gdy aktywny element nie jest polem tekstowym, transkrypcja jest kopiowana do schowka zamiast wklejana."

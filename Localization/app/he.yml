@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "שלוט כיצד Pindrop יופיע ב-macOS והאם הוא מתחיל בהפעלת שולחן העבודה שלך."
 controls:
+  _self: ""
 copied:
   _self: "מוּעֲתָק!"
   to_clipboard: "הועתק ללוח"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "החזק כדי להקליט, שחרר כדי לעצור ולתמלל"
   to_record_release_to_transcribe: "החזק כדי להקליט, שחרר כדי לתמלל"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "החזקה בלבד"
+  or_double_press: "החזקה או לחיצה כפולה"
+  the_push_to_talk_shortcut_to_dictate_releas: "החזק את קיצור לחץ-ודבר כדי להכתיב; שחרר כדי לעצור."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "החזק את קיצור לחץ-ודבר כדי להכתיב, או לחץ עליו פעמיים כדי להמשיך להקליט ללא ידיים עד שתלחץ שוב."
 home:
   _self: "בית"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "אין מילים אוצר מילים"
   transcripts_audio_prompts_file_names_or_perso: "אין תמלולים, אודיו, הנחיות, שמות קבצים או תוכן אישי — לעולם."
   contributions_yet_pairs_are_stored_when_ai_en: "אין תרומות עדיין. זוגות נשמרים כאשר שיפור באמצעות בינה מלאכותית או עריכות ידניות משנים תמלול."
+  text_field_focused_transcript_copied_to_clipb: "אין שדה טקסט בפוקוס. התמלול הועתק ללוח הגזירים."
 not:
   assigned: "לא מוקצה"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "ספקים, הנחיות ופקדי מצב אווירה"
 push:
   to_talk: "דחיפה-לדבר"
+  to_talk_gesture: "מחוות לחץ-ודבר"
 queue:
   complete_restored: "התור הושלם — %@ שוחזר"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ קלט / %@ פלט אסימונים"
   in_out_thinking: "%@ קלט / %@ פלט / %@ חשיבה אסימונים"
+only:
+  paste_into_text_fields: "הדבק רק בשדות טקסט"
+when:
+  the_focused_element_is_not_a_text_field_the: "כאשר הרכיב בפוקוס אינו שדה טקסט, התמלול מועתק ללוח הגזירים במקום להיות מודבק."

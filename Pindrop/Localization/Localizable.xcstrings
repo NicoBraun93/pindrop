@@ -70274,6 +70274,774 @@
         }
       }
     },
+    "hold_only": {
+      "comment": "hold_only",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الضغط المستمر فقط"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "শুধু ধরে রাখা"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pouze podržení"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun hold nede"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur halten"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μόνο κράτημα"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold only"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo mantener"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vain pohjassa pitäminen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintien seulement"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "החזקה בלבד"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "केवल दबाए रखें"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Csak nyomva tartás"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hanya tahan"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo tieni premuto"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "長押しのみ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "길게 누르기만"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahan sahaja"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bare hold inne"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alleen ingedrukt houden"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tylko przytrzymanie"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somente segurar"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doar ținere apăsată"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только удержание"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Endast håll ned"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กดค้างเท่านั้น"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca basılı tutma"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лише утримання"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ giữ"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅长按"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅長按"
+          }
+        }
+      }
+    },
+    "hold_or_double_press": {
+      "comment": "hold_or_double_press",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الضغط المستمر أو الضغط مرتين"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ধরে রাখা বা দুবার চাপা"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podržení nebo dvojí stisknutí"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold nede eller tryk to gange"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halten oder doppelt drücken"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κράτημα ή διπλό πάτημα"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold or double-press"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantener o pulsar dos veces"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pohjassa pitäminen tai kaksoispainallus"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintien ou double appui"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "החזקה או לחיצה כפולה"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "दबाए रखें या दो बार दबाएँ"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nyomva tartás vagy dupla lenyomás"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahan atau tekan dua kali"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tieni premuto o premi due volte"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "長押しまたは2回押し"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "길게 누르기 또는 두 번 누르기"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahan atau tekan dua kali"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold inne eller trykk to ganger"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingedrukt houden of dubbel drukken"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przytrzymanie lub dwukrotne naciśnięcie"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segurar ou pressionar duas vezes"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ținere apăsată sau dublă apăsare"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удержание или двойное нажатие"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Håll ned eller tryck två gånger"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กดค้างหรือกดสองครั้ง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basılı tutma veya çift basma"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Утримання або подвійне натискання"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giữ hoặc nhấn hai lần"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "长按或连按两次"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "長按或連按兩次"
+          }
+        }
+      }
+    },
+    "hold_the_push_to_talk_shortcut_to_dictate_or_pre": {
+      "comment": "hold_the_push_to_talk_shortcut_to_dictate_or_press_it_twice_to_keep_recording_hands_free_until_you_press_it_again",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط مع الاستمرار على اختصار اضغط للتحدث للإملاء، أو اضغط عليه مرتين لمواصلة التسجيل دون استخدام اليدين حتى تضغط عليه مرة أخرى."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ডিকটেশনের জন্য পুশ-টু-টক শর্টকাট ধরে রাখুন, অথবা দুবার চাপুন যাতে আবার চাপা পর্যন্ত হাত ছাড়াই রেকর্ডিং চলতে থাকে।"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podržte zkratku push-to-talk pro diktování, nebo ji stiskněte dvakrát a nahrávejte bez rukou, dokud ji nestisknete znovu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold push-to-talk-genvejen nede for at diktere, eller tryk to gange for at optage håndfrit, indtil du trykker igen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-Talk-Kurzbefehl gedrückt halten zum Diktieren, oder zweimal drücken, um freihändig weiter aufzunehmen, bis Sie ihn erneut drücken."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κρατήστε πατημένη τη συντόμευση push-to-talk για υπαγόρευση ή πατήστε την δύο φορές για συνεχή εγγραφή χωρίς χέρια μέχρι να την πατήσετε ξανά."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold the push-to-talk shortcut to dictate, or press it twice to keep recording hands-free until you press it again."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantén el atajo de pulsar para hablar para dictar, o púlsalo dos veces para seguir grabando con las manos libres hasta que vuelvas a pulsarlo."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pidä push-to-talk-pikanäppäintä pohjassa sanellaksesi tai paina sitä kahdesti jatkaaksesi tallennusta kädet vapaana, kunnes painat sitä uudelleen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintenez le raccourci Push-to-Talk pour dicter, ou appuyez deux fois pour continuer l'enregistrement mains libres jusqu'à ce que vous appuyiez de nouveau."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "החזק את קיצור לחץ-ודבר כדי להכתיב, או לחץ עליו פעמיים כדי להמשיך להקליט ללא ידיים עד שתלחץ שוב."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बोलकर लिखने के लिए पुश-टू-टॉक शॉर्टकट दबाए रखें, या दो बार दबाएँ ताकि दोबारा दबाने तक बिना हाथ लगाए रिकॉर्डिंग चलती रहे।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tartsa nyomva a push-to-talk gyorsbillentyűt a diktáláshoz, vagy nyomja meg kétszer a kihangosított folyamatos rögzítéshez, amíg újra meg nem nyomja."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahan pintasan tekan untuk bicara untuk mendikte, atau tekan dua kali agar perekaman bebas genggam berlanjut sampai Anda menekannya lagi."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tieni premuta la scorciatoia push-to-talk per dettare, oppure premila due volte per continuare a registrare a mani libere finché non la premi di nuovo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プッシュツートークのショートカットを押している間だけ音声入力します。2回押すと、もう一度押すまでハンズフリーで録音を続けます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "받아쓰기하려면 푸시투토크 단축키를 누르고 있거나, 두 번 눌러 다시 누를 때까지 핸즈프리로 녹음을 계속하세요."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahan pintasan tekan untuk bercakap untuk mengimlak, atau tekan dua kali supaya rakaman bebas tangan diteruskan sehingga anda menekannya semula."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold push-to-talk-snarveien inne for å diktere, eller trykk to ganger for å ta opp håndfritt til du trykker igjen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Houd de push-to-talk-sneltoets ingedrukt om te dicteren, of druk er twee keer op om handsfree door te blijven opnemen tot je er opnieuw op drukt."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przytrzymaj skrót push-to-talk, aby dyktować, albo naciśnij go dwukrotnie, aby nagrywać bez użycia rąk, dopóki nie naciśniesz go ponownie."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segure o atalho de pressionar para falar para ditar, ou pressione-o duas vezes para continuar gravando sem as mãos até pressioná-lo novamente."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ține apăsată scurtătura push-to-talk pentru a dicta sau apas-o de două ori pentru a înregistra hands-free până când o apeși din nou."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удерживайте сочетание push-to-talk для диктовки или нажмите его дважды, чтобы продолжить запись без рук, пока не нажмёте снова."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Håll ned push-to-talk-genvägen för att diktera, eller tryck två gånger för att spela in handsfree tills du trycker igen."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กดค้างที่ปุ่มลัดกดเพื่อพูดเพื่อบอกข้อความ หรือกดสองครั้งเพื่อบันทึกแบบแฮนด์ฟรีต่อไปจนกว่าคุณจะกดอีกครั้ง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dikte etmek için bas-konuş kısayolunu basılı tutun ya da tekrar basana kadar eller serbest kayda devam etmek için iki kez basın."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Утримуйте комбінацію push-to-talk для диктування або натисніть її двічі, щоб продовжити запис без рук, доки не натиснете знову."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giữ phím tắt nhấn để nói để đọc chính tả, hoặc nhấn hai lần để tiếp tục ghi âm rảnh tay cho đến khi bạn nhấn lại."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按住按键通话快捷键进行听写，或连按两次以免手持续录音，直到再次按下为止。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按住按鍵通話快速鍵進行聽寫，或連按兩次以免手持續錄音，直到再次按下為止。"
+          }
+        }
+      }
+    },
+    "hold_the_push_to_talk_shortcut_to_dictate_releas": {
+      "comment": "hold_the_push_to_talk_shortcut_to_dictate_release_to_stop",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط مع الاستمرار على اختصار اضغط للتحدث للإملاء؛ حرره للإيقاف."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ডিকটেশনের জন্য পুশ-টু-টক শর্টকাট ধরে রাখুন; থামাতে ছেড়ে দিন।"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podržte zkratku push-to-talk pro diktování; uvolněte pro ukončení."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold push-to-talk-genvejen nede for at diktere; slip for at stoppe."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-Talk-Kurzbefehl gedrückt halten zum Diktieren; loslassen zum Beenden."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κρατήστε πατημένη τη συντόμευση push-to-talk για υπαγόρευση· αφήστε την για διακοπή."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold the push-to-talk shortcut to dictate; release to stop."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantén el atajo de pulsar para hablar para dictar; suéltalo para detener."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pidä push-to-talk-pikanäppäintä pohjassa sanellaksesi; vapauta lopettaaksesi."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maintenez le raccourci Push-to-Talk pour dicter ; relâchez pour arrêter."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "החזק את קיצור לחץ-ודבר כדי להכתיב; שחרר כדי לעצור."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बोलकर लिखने के लिए पुश-टू-टॉक शॉर्टकट दबाए रखें; रोकने के लिए छोड़ दें।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tartsa nyomva a push-to-talk gyorsbillentyűt a diktáláshoz; engedje el a leállításhoz."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahan pintasan tekan untuk bicara untuk mendikte; lepaskan untuk berhenti."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tieni premuta la scorciatoia push-to-talk per dettare; rilascia per fermare."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プッシュツートークのショートカットを押している間だけ音声入力します。離すと停止します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "받아쓰기하려면 푸시투토크 단축키를 누르고 있으세요. 놓으면 중지됩니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahan pintasan tekan untuk bercakap untuk mengimlak; lepaskan untuk berhenti."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold push-to-talk-snarveien inne for å diktere; slipp for å stoppe."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Houd de push-to-talk-sneltoets ingedrukt om te dicteren; laat los om te stoppen."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przytrzymaj skrót push-to-talk, aby dyktować; zwolnij, aby zatrzymać."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segure o atalho de pressionar para falar para ditar; solte para parar."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ține apăsată scurtătura push-to-talk pentru a dicta; eliberează pentru a opri."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удерживайте сочетание push-to-talk для диктовки; отпустите, чтобы остановить."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Håll ned push-to-talk-genvägen för att diktera; släpp för att stoppa."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กดค้างที่ปุ่มลัดกดเพื่อพูดเพื่อบอกข้อความ ปล่อยเพื่อหยุด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dikte etmek için bas-konuş kısayolunu basılı tutun; durdurmak için bırakın."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Утримуйте комбінацію push-to-talk для диктування; відпустіть, щоб зупинити."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giữ phím tắt nhấn để nói để đọc chính tả; thả ra để dừng."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按住按键通话快捷键进行听写；松开即停止。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按住按鍵通話快速鍵進行聽寫；放開即停止。"
+          }
+        }
+      }
+    },
     "hold_the_shortcut_to_record_then_release_to_tran": {
       "comment": "hold_the_shortcut_to_record_then_release_to_tran",
       "extractionState": "manual",
@@ -99842,6 +100610,198 @@
         }
       }
     },
+    "no_text_field_focused_transcript_copied_to_clipb": {
+      "comment": "no_text_field_focused_transcript_copied_to_clipboard",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يوجد حقل نص محدد. تم نسخ النص المفرغ إلى الحافظة."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "কোনো টেক্সট ফিল্ড ফোকাসে নেই। প্রতিলিপি ক্লিপবোর্ডে কপি করা হয়েছে।"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádné textové pole není zaměřeno. Přepis zkopírován do schránky."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intet tekstfelt i fokus. Transskription kopieret til udklipsholder."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kein Textfeld im Fokus. Transkription in die Zwischenablage kopiert."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν υπάρχει εστιασμένο πεδίο κειμένου. Η απομαγνητοφώνηση αντιγράφηκε στο πρόχειρο."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No text field focused. Transcript copied to clipboard."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ningún campo de texto enfocado. Transcripción copiada al portapapeles."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ei tekstikenttää kohdistettuna. Litterointi kopioitu leikepöydälle."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun champ de texte ciblé. Transcription copiée dans le presse-papiers."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אין שדה טקסט בפוקוס. התמלול הועתק ללוח הגזירים."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कोई टेक्स्ट फ़ील्ड फ़ोकस में नहीं। ट्रांसक्रिप्ट क्लिपबोर्ड पर कॉपी किया गया।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nincs fókuszált szövegmező. Az átirat a vágólapra másolva."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak ada bidang teks yang difokuskan. Transkrip disalin ke papan klip."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun campo di testo attivo. Trascrizione copiata negli appunti."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テキストフィールドがフォーカスされていません。文字起こしをクリップボードにコピーしました。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "포커스된 텍스트 필드가 없습니다. 전사 내용을 클립보드에 복사했습니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiada medan teks difokuskan. Transkrip disalin ke papan keratan."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen tekstfelt i fokus. Transkripsjon kopiert til utklippstavlen."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen tekstveld met focus. Transcriptie naar klembord gekopieerd."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brak aktywnego pola tekstowego. Transkrypcja skopiowana do schowka."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nenhum campo de texto em foco. Transcrição copiada para a área de transferência."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niciun câmp de text focalizat. Transcrierea a fost copiată în clipboard."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нет активного текстового поля. Расшифровка скопирована в буфер обмена."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inget textfält i fokus. Transkriptionen kopierades till urklipp."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่มีช่องข้อความที่โฟกัส คัดลอกข้อความถอดเสียงไปยังคลิปบอร์ดแล้ว"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odaklanılan metin alanı yok. Döküm panoya kopyalandı."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Немає активного текстового поля. Транскрипцію скопійовано в буфер обміну."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không có trường văn bản nào được chọn. Đã sao chép bản chép lời vào bảng nhớ tạm."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "没有聚焦的文本框。转录内容已复制到剪贴板。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "沒有聚焦的文字欄位。逐字稿已複製到剪貼簿。"
+          }
+        }
+      }
+    },
     "no_transcriptions_yet": {
       "comment": "no_transcriptions_yet",
       "extractionState": "manual",
@@ -105790,6 +106750,198 @@
           "stringUnit": {
             "state": "translated",
             "value": "在裝置上，無需憑據"
+          }
+        }
+      }
+    },
+    "only_paste_into_text_fields": {
+      "comment": "only_paste_into_text_fields",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اللصق في حقول النص فقط"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "শুধু টেক্সট ফিল্ডে পেস্ট করুন"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vkládat pouze do textových polí"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indsæt kun i tekstfelter"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur in Textfelder einfügen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επικόλληση μόνο σε πεδία κειμένου"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only paste into text fields"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pegar solo en campos de texto"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liitä vain tekstikenttiin"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coller uniquement dans les champs de texte"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הדבק רק בשדות טקסט"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "केवल टेक्स्ट फ़ील्ड में पेस्ट करें"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Csak szövegmezőkbe illessze be"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hanya tempel di bidang teks"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incolla solo nei campi di testo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テキストフィールドにのみ貼り付ける"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "텍스트 필드에만 붙여넣기"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampal hanya dalam medan teks"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lim kun inn i tekstfelt"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alleen in tekstvelden plakken"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wklejaj tylko w pola tekstowe"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colar apenas em campos de texto"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lipește doar în câmpuri de text"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вставлять только в текстовые поля"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klistra bara in i textfält"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "วางเฉพาะในช่องข้อความ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca metin alanlarına yapıştır"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вставляти лише в текстові поля"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ dán vào trường văn bản"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅粘贴到文本框"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "僅貼上至文字欄位"
           }
         }
       }
@@ -127294,6 +128446,198 @@
           "stringUnit": {
             "state": "translated",
             "value": "按鍵通話"
+          }
+        }
+      }
+    },
+    "push_to_talk_gesture": {
+      "comment": "push_to_talk_gesture",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيماءة اضغط للتحدث"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "পুশ-টু-টক অঙ্গভঙ্গি"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesto push-to-talk"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-talk-bevægelse"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-Talk-Geste"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χειρονομία push-to-talk"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-Talk Gesture"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesto de pulsar para hablar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-talk-ele"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geste Push-to-Talk"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מחוות לחץ-ודבר"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "पुश-टू-टॉक जेस्चर"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-talk mozdulat"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerakan tekan untuk bicara"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesto push-to-talk"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プッシュツートークの操作"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "푸시투토크 제스처"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerak isyarat tekan untuk bercakap"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-talk-bevegelse"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-talk-gebaar"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gest push-to-talk"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesto de pressionar para falar"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gest push-to-talk"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Жест push-to-talk"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-to-talk-gest"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ท่าทางกดเพื่อพูด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bas-konuş hareketi"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Жест push-to-talk"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cử chỉ nhấn để nói"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按键通话手势"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按鍵通話手勢"
           }
         }
       }
@@ -214654,6 +215998,198 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pindrop 1.22.0 · 2026 年 7 月"
+          }
+        }
+      }
+    },
+    "when_the_focused_element_is_not_a_text_field_the": {
+      "comment": "when_the_focused_element_is_not_a_text_field_the_transcript_is_copied_to_the_clipboard_instead_of_pasted",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عندما لا يكون العنصر المحدد حقل نص، يتم نسخ النص المفرغ إلى الحافظة بدلاً من لصقه."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ফোকাস করা উপাদানটি টেক্সট ফিল্ড না হলে প্রতিলিপি পেস্ট না করে ক্লিপবোর্ডে কপি করা হয়।"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokud zaměřený prvek není textové pole, přepis se zkopíruje do schránky místo vložení."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når det fokuserede element ikke er et tekstfelt, kopieres transskriptionen til udklipsholderen i stedet for at blive indsat."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn das fokussierte Element kein Textfeld ist, wird die Transkription in die Zwischenablage kopiert statt eingefügt."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όταν το εστιασμένο στοιχείο δεν είναι πεδίο κειμένου, η απομαγνητοφώνηση αντιγράφεται στο πρόχειρο αντί να επικολληθεί."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When the focused element is not a text field, the transcript is copied to the clipboard instead of pasted."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando el elemento enfocado no es un campo de texto, la transcripción se copia al portapapeles en lugar de pegarse."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun kohdistettu elementti ei ole tekstikenttä, litterointi kopioidaan leikepöydälle liittämisen sijaan."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque l'élément ciblé n'est pas un champ de texte, la transcription est copiée dans le presse-papiers au lieu d'être collée."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כאשר הרכיב בפוקוס אינו שדה טקסט, התמלול מועתק ללוח הגזירים במקום להיות מודבק."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जब फ़ोकस किया गया तत्व टेक्स्ट फ़ील्ड न हो, तो ट्रांसक्रिप्ट पेस्ट करने के बजाय क्लिपबोर्ड पर कॉपी हो जाता है।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ha a fókuszált elem nem szövegmező, az átirat a vágólapra kerül beillesztés helyett."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika elemen yang difokuskan bukan bidang teks, transkrip disalin ke papan klip alih-alih ditempel."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando l'elemento attivo non è un campo di testo, la trascrizione viene copiata negli appunti invece di essere incollata."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォーカスされている要素がテキストフィールドでない場合、文字起こしは貼り付けずにクリップボードへコピーされます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "포커스된 요소가 텍스트 필드가 아니면 전사 내용이 붙여넣기 대신 클립보드에 복사됩니다."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apabila elemen yang difokuskan bukan medan teks, transkrip disalin ke papan keratan dan bukannya ditampal."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når det fokuserte elementet ikke er et tekstfelt, kopieres transkripsjonen til utklippstavlen i stedet for å limes inn."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als het gefocuste element geen tekstveld is, wordt de transcriptie naar het klembord gekopieerd in plaats van geplakt."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gdy aktywny element nie jest polem tekstowym, transkrypcja jest kopiowana do schowka zamiast wklejana."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando o elemento em foco não é um campo de texto, a transcrição é copiada para a área de transferência em vez de colada."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Când elementul focalizat nu este un câmp de text, transcrierea este copiată în clipboard în loc să fie lipită."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если активный элемент не является текстовым полем, расшифровка копируется в буфер обмена вместо вставки."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När det fokuserade elementet inte är ett textfält kopieras transkriptionen till urklipp i stället för att klistras in."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อองค์ประกอบที่โฟกัสไม่ใช่ช่องข้อความ ข้อความถอดเสียงจะถูกคัดลอกไปยังคลิปบอร์ดแทนการวาง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odaklanılan öğe bir metin alanı değilse, döküm yapıştırılmak yerine panoya kopyalanır."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Якщо активний елемент не є текстовим полем, транскрипція копіюється в буфер обміну замість вставлення."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi phần tử đang được chọn không phải là trường văn bản, bản chép lời sẽ được sao chép vào bảng nhớ tạm thay vì dán."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "当聚焦的元素不是文本框时，转录内容会复制到剪贴板而不是粘贴。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "當聚焦的元素不是文字欄位時，逐字稿會複製到剪貼簿而非貼上。"
           }
         }
       }

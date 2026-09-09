@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "macOS에서 Pindrop이 나타나는 방식과 데스크탑 세션에서 Pindrop이 시작되는지 여부를 제어합니다."
 controls:
+  _self: ""
 copied:
   _self: "복사되었습니다!"
   to_clipboard: "클립보드에 복사됨"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "녹음하려면 길게 누르고, 중지하고 스크립트를 작성하려면 떼세요."
   to_record_release_to_transcribe: "녹음하려면 길게 누르고 스크립트를 작성하려면 떼세요."
   to_record_then_release_to_open_the_note_edi: "누르고 있으면 녹음되고, 놓으면 전사가 포함된 메모 편집기가 열립니다."
+  only: "길게 누르기만"
+  or_double_press: "길게 누르기 또는 두 번 누르기"
+  the_push_to_talk_shortcut_to_dictate_releas: "받아쓰기하려면 푸시투토크 단축키를 누르고 있으세요. 놓으면 중지됩니다."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "받아쓰기하려면 푸시투토크 단축키를 누르고 있거나, 두 번 눌러 다시 누를 때까지 핸즈프리로 녹음을 계속하세요."
 home:
   _self: "홈"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "어휘 없음"
   transcripts_audio_prompts_file_names_or_perso: "전사, 오디오, 프롬프트, 파일 이름, 개인 콘텐츠는 결코 포함되지 않습니다."
   contributions_yet_pairs_are_stored_when_ai_en: "아직 기여가 없습니다. AI 향상 또는 수동 편집이 전사를 변경하면 쌍이 저장됩니다."
+  text_field_focused_transcript_copied_to_clipb: "포커스된 텍스트 필드가 없습니다. 전사 내용을 클립보드에 복사했습니다."
 not:
   assigned: "할당되지 않음"
   enough_voice_data_yet: "아직 음성 데이터가 부족합니다"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "공급자, 프롬프트 및 분위기 모드 제어"
 push:
   to_talk: "푸시투톡"
+  to_talk_gesture: "푸시투토크 제스처"
 queue:
   complete_restored: "대기열 완료 — %@ 복원됨"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "입력 %@ / 출력 %@ 토큰"
   in_out_thinking: "입력 %@ / 출력 %@ / 추론 %@ 토큰"
+only:
+  paste_into_text_fields: "텍스트 필드에만 붙여넣기"
+when:
+  the_focused_element_is_not_a_text_field_the: "포커스된 요소가 텍스트 필드가 아니면 전사 내용이 붙여넣기 대신 클립보드에 복사됩니다."

@@ -235,6 +235,7 @@ continue:
 control:
   how_pindrop_appears_in_macos_and_whether: "Hallitse, kuinka Pindrop näkyy macOS:ssä ja alkaako se työpöytäistunnostasi."
 controls:
+  _self: ""
 copied:
   _self: "Kopioitu!"
   to_clipboard: "Kopioitu leikepöydälle"
@@ -513,6 +514,10 @@ hold:
   to_record_release_to_stop_and_transcribe: "Pidä painettuna tallentaaksesi, vapauta pysäyttääksesi ja litteroiksesi"
   to_record_release_to_transcribe: "Pidä painettuna tallentaaksesi, vapauta litteroidaksesi"
   to_record_then_release_to_open_the_note_edi: "Hold to record, then release to open the note editor with the transcription."
+  only: "Vain pohjassa pitäminen"
+  or_double_press: "Pohjassa pitäminen tai kaksoispainallus"
+  the_push_to_talk_shortcut_to_dictate_releas: "Pidä push-to-talk-pikanäppäintä pohjassa sanellaksesi; vapauta lopettaaksesi."
+  the_push_to_talk_shortcut_to_dictate_or_pre: "Pidä push-to-talk-pikanäppäintä pohjassa sanellaksesi tai paina sitä kahdesti jatkaaksesi tallennusta kädet vapaana, kunnes painat sitä uudelleen."
 home:
   _self: "Koti"
 hotkey:
@@ -738,6 +743,7 @@ no:
   vocabulary_words: "Ei sanastoa"
   transcripts_audio_prompts_file_names_or_perso: "Ei transkriptioita, ääntä, kehotteita, tiedostonimiä tai henkilökohtaista sisältöä — ei koskaan."
   contributions_yet_pairs_are_stored_when_ai_en: "Ei vielä osallistumisia. Parit tallennetaan, kun tekoälyparannus tai manuaaliset muokkaukset muuttavat transkriptiota."
+  text_field_focused_transcript_copied_to_clipb: "Ei tekstikenttää kohdistettuna. Litterointi kopioitu leikepöydälle."
 not:
   assigned: "Ei määrätty"
   enough_voice_data_yet: "Not enough voice data yet"
@@ -928,6 +934,7 @@ providers:
   prompts_and_vibe_mode_controls: "Palveluntarjoajat, kehotteet ja vibe-tilan säätimet"
 push:
   to_talk: "Push-to-Talk"
+  to_talk_gesture: "Push-to-talk-ele"
 queue:
   complete_restored: "Jono valmis — palautettu %@"
 quickly:
@@ -1578,3 +1585,7 @@ total:
 tokens:
   in_out: "%@ syöte- / %@ tulostokenia"
   in_out_thinking: "%@ syöte- / %@ tulos- / %@ ajattelutokenia"
+only:
+  paste_into_text_fields: "Liitä vain tekstikenttiin"
+when:
+  the_focused_element_is_not_a_text_field_the: "Kun kohdistettu elementti ei ole tekstikenttä, litterointi kopioidaan leikepöydälle liittämisen sijaan."
